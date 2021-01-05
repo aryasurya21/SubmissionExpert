@@ -13,7 +13,7 @@
 		A18228B3257E0C44003690C5 /* NDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = A18228A5257E0C44003690C5 /* NDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A18228E9257E0CAD003690C5 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18228E8257E0CAD003690C5 /* NCore.framework */; };
 		A1822920257E0DF7003690C5 /* DetailTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182291F257E0DF7003690C5 /* DetailTransformer.swift */; };
-		A182292F257E0E2B003690C5 /* DataModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182292E257E0E2B003690C5 /* DataModuleEntity.swift */; };
+		A182292F257E0E2B003690C5 /* DetailModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182292E257E0E2B003690C5 /* DetailModuleEntity.swift */; };
 		A1822938257E0E93003690C5 /* DetailModuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1822937257E0E93003690C5 /* DetailModuleResponse.swift */; };
 		A182293E257E0EAB003690C5 /* GetDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182293D257E0EAB003690C5 /* GetDetailRemoteDataSource.swift */; };
 		A1822942257E0EC1003690C5 /* GetDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1822941257E0EC1003690C5 /* GetDetailRepository.swift */; };
@@ -43,7 +43,7 @@
 		A18228B2257E0C44003690C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A18228E8257E0CAD003690C5 /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A182291F257E0DF7003690C5 /* DetailTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransformer.swift; sourceTree = "<group>"; };
-		A182292E257E0E2B003690C5 /* DataModuleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModuleEntity.swift; sourceTree = "<group>"; };
+		A182292E257E0E2B003690C5 /* DetailModuleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleEntity.swift; sourceTree = "<group>"; };
 		A1822937257E0E93003690C5 /* DetailModuleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleResponse.swift; sourceTree = "<group>"; };
 		A182293D257E0EAB003690C5 /* GetDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailRemoteDataSource.swift; sourceTree = "<group>"; };
 		A1822941257E0EC1003690C5 /* GetDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailRepository.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		A182292D257E0E1B003690C5 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A182292E257E0E2B003690C5 /* DataModuleEntity.swift */,
+				A182292E257E0E2B003690C5 /* DetailModuleEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A182293E257E0EAB003690C5 /* GetDetailRemoteDataSource.swift in Sources */,
-				A182292F257E0E2B003690C5 /* DataModuleEntity.swift in Sources */,
+				A182292F257E0E2B003690C5 /* DetailModuleEntity.swift in Sources */,
 				A1B7050D258257BA000F71D0 /* GetDetailLocalDataSource.swift in Sources */,
 				A1822920257E0DF7003690C5 /* DetailTransformer.swift in Sources */,
 				A1822942257E0EC1003690C5 /* GetDetailRepository.swift in Sources */,

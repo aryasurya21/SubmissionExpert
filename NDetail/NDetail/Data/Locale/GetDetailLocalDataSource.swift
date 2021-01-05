@@ -31,8 +31,29 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
     
-    public func update(id: Int, entity: DetailModuleEntity) -> AnyPublisher<Bool, Error> {
-        fatalError()
+    public func update(id: String, entity: DetailModuleEntity) -> AnyPublisher<Bool, Error> {
+        return Future<Bool, Error> { (completion) in
+            guard
+                let targetMovie = self.realm.objects(DetailModuleEntity.self).filter("id=\(id)").first
+            else {
+                return completion(.failure(DatabaseError.invalidInstance))
+            }
+            do {
+                try realm.write {
+                    targetMovie.setValue(entity.title, forKey: "title")
+                    targetMovie.setValue(entity.overview, forKey: "overview")
+                    targetMovie.setValue(entity.posterPath, forKey: "posterPath")
+                    targetMovie.setValue(entity.backdropPath, forKey: "backdropPath")
+                    targetMovie.setValue(entity.voteAverage, forKey: "voteAverage")
+                    targetMovie.setValue(entity.runtime, forKeyPath: "runtime")
+                    targetMovie.setValue(entity.movieCategory, forKey: "movieCategory")
+                    targetMovie.setValue(entity.releaseDate, forKey: "releaseDate")
+                }
+                completion(.success(true))
+            } catch {
+                return completion(.failure(DatabaseError.requestFailed))
+            }
+        }.eraseToAnyPublisher()
     }
     
     public func toggle(id: Int) -> AnyPublisher<DetailModuleEntity, Error> {

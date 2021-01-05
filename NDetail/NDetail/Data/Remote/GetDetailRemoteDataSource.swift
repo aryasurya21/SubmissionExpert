@@ -10,8 +10,6 @@ import NCore
 import Combine
 import Alamofire
 
-
-
 public struct GetDetailRemoteDataSource: DataSource {
     
     public typealias Request = Any

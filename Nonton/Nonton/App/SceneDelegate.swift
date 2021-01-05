@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         let homeInteractor = Injector.shared.injectHomeInteractor()
         let favoriteInteractor: Interactor<Any, [FavoriteDomainModel], GetFavoritesRepository<GetFavoritesLocaleDataSource, FavoriteTransformer>> = Injector.shared.provideFavorite()
-        
         let homePresenter = HomePresenter(useCase: homeInteractor)
         let favoritePresenter = GetListPresenter(useCase: favoriteInteractor)
 
