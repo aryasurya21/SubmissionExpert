@@ -1,0 +1,11 @@
+disabled_rules: 
+- vertical_whitespace
+- identifier_name
+- force_try
+- force_cast
+
+included:
+  - Nonton
+
+excluded:
+  - Pods
