@@ -7,9 +7,10 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import NFavorite
 
 struct MovieRow: View {
-    var movie: MovieModel
+    var movie: FavoriteDomainModel
 
     var body: some View {
         VStack {

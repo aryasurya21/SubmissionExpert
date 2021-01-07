@@ -9,7 +9,14 @@ import Foundation
 import SwiftUI
 import Combine
 
-public class GetListPresenter<Request, Response, Interactor: UseCase>: ObservableObject where Interactor.Request == Request, Interactor.Response == [Response] {
+public class GetListPresenter<
+    Request,
+    Response,
+    Interactor: UseCase
+>: ObservableObject
+where
+    Interactor.Request == Request,
+    Interactor.Response == [Response] {
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -43,7 +50,7 @@ public class GetListPresenter<Request, Response, Interactor: UseCase>: Observabl
             .store(in: &cancellables)
     }
     
-//    func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
-//        
-//    }
+    public func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
+        return content()
+    }
 }

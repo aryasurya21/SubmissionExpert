@@ -16,16 +16,16 @@ struct FavoriteView: View {
         NavigationView {
             ZStack {
                 if self.presenter.isError {
-                    ErrorView(errorMessage: self.presenter.errorMessage ?? "")
+                    ErrorView(errorMessage: self.presenter.errorMessage)
                 } else if self.presenter.isLoading {
                     ActivityIndicator()
-                } else if self.presenter.list.count != nil && self.presenter.list.count ?? 0 > 0 {
+                } else if self.presenter.list.count > 0 {
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(self.presenter.list) { movie in
                             ZStack {
-//                                self.presenter.viewBuilder(movieData: movie) {
-//                                    MovieRow(movie: movie)
-//                                }.buttonStyle(PlainButtonStyle())
+                                self.presenter.viewBuilder(data: movie) {
+                                    MovieRow(movie: movie)
+                                }.buttonStyle(PlainButtonStyle())
                             }
                         }
                     }.navigationBarTitle("Favorite Movies", displayMode: .large)

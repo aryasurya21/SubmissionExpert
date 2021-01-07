@@ -57,8 +57,8 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
     public func get(id: String) -> AnyPublisher<FavoriteModuleEntity, Error> {
         fatalError()
     }
-    
-    public func update(id: Int, entity: FavoriteModuleEntity) -> AnyPublisher<Bool, Error> {
+
+    public func update(id: String, entity: FavoriteModuleEntity) -> AnyPublisher<Bool, Error> {
         fatalError()
-    }
+    }    
 }

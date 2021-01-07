@@ -22,7 +22,7 @@ final class Injector {
         let repository = GetFavoritesRepository(localeDataSource: locale, mapper: mapper)
         return Interactor(repository) as! U
     }
-    
+
     private func injectRepository() -> MovieRepositoryProtocol {
         let realm = try? Realm()
 

@@ -44,7 +44,7 @@ where
 
                 if result.runtime == 0 {
                     return self._remoteDataSource.execute(request: request ?? "")
-                        .map { self._mapper.transformResponseToEntity(response: $0) }
+                        .map { self._mapper.transformResponseToEntity(response: $0) } 
                         .catch { _ in self._localeDataSource.get(id: request ?? "") }
                         .flatMap { self._localeDataSource.update(id: request ?? "", entity: $0) }
                         .filter { $0 }
