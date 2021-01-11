@@ -13,12 +13,12 @@ import SDWebImage
 
 /// Use wrapper to solve tne `UIImageView`/`NSImageView` frame size become image size issue (SwiftUI's Bug)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public class AnimatedImageViewWrapper : PlatformView {
+public class AnimatedImageViewWrapper: PlatformView {
     var wrapped = SDAnimatedImageView()
     var interpolationQuality = CGInterpolationQuality.default
     var shouldAntialias = false
     var resizable = false
-    
+
     override public func draw(_ rect: CGRect) {
         #if os(macOS)
         guard let ctx = NSGraphicsContext.current?.cgContext else {
@@ -32,7 +32,7 @@ public class AnimatedImageViewWrapper : PlatformView {
         ctx.interpolationQuality = interpolationQuality
         ctx.setShouldAntialias(shouldAntialias)
     }
-    
+
     #if os(macOS)
     public override func layout() {
         super.layout()
@@ -44,7 +44,7 @@ public class AnimatedImageViewWrapper : PlatformView {
         wrapped.frame = self.bounds
     }
     #endif
-    
+
     public override var intrinsicContentSize: CGSize {
         /// Match the behavior of SwiftUI.Image, only when image is resizable, use the super implementation to calculate size
         if resizable {
@@ -54,25 +54,24 @@ public class AnimatedImageViewWrapper : PlatformView {
             return wrapped.intrinsicContentSize
         }
     }
-    
+
     public override init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
         addSubview(wrapped)
     }
-    
+
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(wrapped)
     }
 }
 
-
 /// Store the Animated Image loading state, to avoid re-query duinrg `updateView(_:)` until Source of Truth changes
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension PlatformView {
     static private var sd_imageNameKey: Void?
     static private var sd_imageDataKey: Void?
-    
+
     var sd_imageName: String? {
         get {
             objc_getAssociatedObject(self, &PlatformView.sd_imageNameKey) as? String
@@ -93,13 +92,13 @@ extension PlatformView {
 
 /// Use wrapper to solve the `UIProgressView`/`NSProgressIndicator` frame origin NaN crash (SwiftUI's bug)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public class ProgressIndicatorWrapper : PlatformView {
+public class ProgressIndicatorWrapper: PlatformView {
     #if os(macOS)
     var wrapped = NSProgressIndicator()
     #else
     var wrapped = UIProgressView(progressViewStyle: .default)
     #endif
-    
+
     #if os(macOS)
     public override func layout() {
         super.layout()
@@ -111,12 +110,12 @@ public class ProgressIndicatorWrapper : PlatformView {
         wrapped.center = self.center
     }
     #endif
-    
+
     public override init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
         addSubview(wrapped)
     }
-    
+
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(wrapped)

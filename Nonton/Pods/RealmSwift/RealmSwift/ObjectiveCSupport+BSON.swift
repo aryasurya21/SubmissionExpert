@@ -46,7 +46,7 @@ public extension ObjectiveCSupport {
         case .objectId(let val):
             return val as RLMObjectId
         case .document(let val):
-            return val.reduce(into: Dictionary<String, RLMBSON?>()) { (result: inout [String: RLMBSON?], kvp) in
+            return val.reduce(into: [String: RLMBSON?]()) { (result: inout [String: RLMBSON?], kvp) in
                 result[kvp.key] = convert(object: kvp.value) ?? NSNull()
             } as NSDictionary
         case .array(let val):
@@ -134,14 +134,14 @@ public extension ObjectiveCSupport {
         case .minKey:
             return .minKey
         case .document:
-            guard let val = bson as? Dictionary<String, RLMBSON?> else {
+            guard let val = bson as? [String: RLMBSON?] else {
                 return nil
             }
-            return .document(val.reduce(into: Dictionary<String, AnyBSON?>()) { (result: inout [String: AnyBSON?], kvp) in
+            return .document(val.reduce(into: [String: AnyBSON?]()) { (result: inout [String: AnyBSON?], kvp) in
                 result[kvp.key] = convert(object: kvp.value)
             })
         case .array:
-            guard let val = bson as? Array<RLMBSON?> else {
+            guard let val = bson as? [RLMBSON?] else {
                 return nil
             }
             return .array(val.map(convert))

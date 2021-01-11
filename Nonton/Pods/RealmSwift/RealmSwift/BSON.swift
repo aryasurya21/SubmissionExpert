@@ -57,7 +57,7 @@ extension ObjectId: BSON {
 }
 
 /// A Dictionary object representing a `BSON` document.
-public typealias Document = Dictionary<String, AnyBSON?>
+public typealias Document = [String: AnyBSON?]
 
 extension Dictionary: BSON where Key == String, Value == AnyBSON? {
 }
@@ -170,7 +170,7 @@ extension MinKey: BSON {
             self = .objectId(val)
         case let val as Document:
             self = .document(val)
-        case let val as Array<AnyBSON?>:
+        case let val as [AnyBSON?]:
             self = .array(val)
         case let val as Bool:
             self = .bool(val)

@@ -34,7 +34,7 @@ where
     }
 
     public func execute(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[FavoriteDomainModel], Error> {
-            return self.localeDataSource.list(request: nil)
+        return self.localeDataSource.list(endpoint: endpoint, request: nil)
                 .map { self.mapper.tranformMovieEntitiesToDomains(endpoint: endpoint, entities: $0) }
                 .eraseToAnyPublisher()
     }

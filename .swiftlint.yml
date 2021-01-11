@@ -12,4 +12,5 @@ included:
   - NHome
 
 excluded:
+  - Nonton/Pods
   - Pods

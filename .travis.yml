@@ -2,6 +2,7 @@ before_install:
   - gem install cocoapods
 install:
   - brew update && brew upgrade swiftlint
+  - cd Nonton
   - pod install
 language: swift
 osx_image: xcode12

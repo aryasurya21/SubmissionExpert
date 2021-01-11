@@ -88,7 +88,6 @@ extension EmbeddedObject: RealmCollectionValue {
         RLMInitializeWithValue(self, value, .partialPrivateShared())
     }
 
-
     // MARK: Properties
 
     /// The Realm which manages the object, or `nil` if the object is unmanaged.
@@ -287,7 +286,6 @@ extension EmbeddedObject: ThreadConfined {
         return realm!.freeze(self)
     }
 }
-
 
 // MARK: AssistedObjectiveCBridgeable
 

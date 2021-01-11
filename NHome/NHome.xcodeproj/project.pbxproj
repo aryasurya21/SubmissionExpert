@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		56E27EFA1AD86305599A5591 /* Pods_NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D7EB2403C01FEEE97FF45 /* Pods_NHome.framework */; };
+		A1AECDEB25AC828300FF9709 /* HomeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDEA25AC828300FF9709 /* HomeTransformer.swift */; };
+		A1AECDF225AC82B200FF9709 /* GetHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */; };
+		A1AECDF625AC82CA00FF9709 /* HomeModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */; };
+		A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */; };
+		A1AECDFC25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */; };
+		A1AECDFF25AC82FF00FF9709 /* HomeModuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */; };
 		A1D0510825AC7C100093AD5D /* NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D050FE25AC7C100093AD5D /* NHome.framework */; };
 		A1D0510D25AC7C100093AD5D /* NHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0510C25AC7C100093AD5D /* NHomeTests.swift */; };
 		A1D0510F25AC7C100093AD5D /* NHome.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D0510125AC7C100093AD5D /* NHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +49,12 @@
 		496DBCFA4C67F71973EF9A10 /* Pods-NHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHome.debug.xcconfig"; path = "Target Support Files/Pods-NHome/Pods-NHome.debug.xcconfig"; sourceTree = "<group>"; };
 		7B4D7EB2403C01FEEE97FF45 /* Pods_NHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F4FFF4A1D283CE175D80EF /* Pods-NHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHome.release.xcconfig"; path = "Target Support Files/Pods-NHome/Pods-NHome.release.xcconfig"; sourceTree = "<group>"; };
+		A1AECDEA25AC828300FF9709 /* HomeTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransformer.swift; sourceTree = "<group>"; };
+		A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeRepository.swift; sourceTree = "<group>"; };
+		A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleEntity.swift; sourceTree = "<group>"; };
+		A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeLocalDataSource.swift; sourceTree = "<group>"; };
+		A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeRemoteDataSource.swift; sourceTree = "<group>"; };
+		A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleResponse.swift; sourceTree = "<group>"; };
 		A1D050FE25AC7C100093AD5D /* NHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D0510125AC7C100093AD5D /* NHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHome.h; sourceTree = "<group>"; };
 		A1D0510225AC7C100093AD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,8 +107,52 @@
 		A1AECDE725AC7FE400FF9709 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A1AECDED25AC829200FF9709 /* Entity */,
+				A1AECDEE25AC829800FF9709 /* Locale */,
+				A1AECDEF25AC829F00FF9709 /* Remote */,
+				A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A1AECDE925AC826E00FF9709 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A1AECDED25AC829200FF9709 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A1AECDEE25AC829800FF9709 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		A1AECDEF25AC829F00FF9709 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				A1AECDF025AC82A300FF9709 /* Response */,
+				A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		A1AECDF025AC82A300FF9709 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		A1D050F425AC7C100093AD5D = {
@@ -123,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				A1AECDE725AC7FE400FF9709 /* Data */,
+				A1AECDE925AC826E00FF9709 /* Domain */,
+				A1AECDEA25AC828300FF9709 /* HomeTransformer.swift */,
 				A1D0510125AC7C100093AD5D /* NHome.h */,
 				A1D0510225AC7C100093AD5D /* Info.plist */,
 			);
@@ -201,6 +259,7 @@
 				TargetAttributes = {
 					A1D050FD25AC7C100093AD5D = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					A1D0510625AC7C100093AD5D = {
 						CreatedOnToolsVersion = 12.1;
@@ -273,6 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AECDFC25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift in Sources */,
+				A1AECDFF25AC82FF00FF9709 /* HomeModuleResponse.swift in Sources */,
+				A1AECDEB25AC828300FF9709 /* HomeTransformer.swift in Sources */,
+				A1AECDF225AC82B200FF9709 /* GetHomeRepository.swift in Sources */,
+				A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */,
+				A1AECDF625AC82CA00FF9709 /* HomeModuleEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 496DBCFA4C67F71973EF9A10 /* Pods-NHome.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5RREGEMU45;
@@ -437,6 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = itdivision.NHome;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82F4FFF4A1D283CE175D80EF /* Pods-NHome.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5RREGEMU45;
@@ -470,6 +538,7 @@
 		A1D0511625AC7C100093AD5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RREGEMU45;
 				INFOPLIST_FILE = NHomeTests/Info.plist;
@@ -488,6 +557,7 @@
 		A1D0511725AC7C100093AD5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RREGEMU45;
 				INFOPLIST_FILE = NHomeTests/Info.plist;

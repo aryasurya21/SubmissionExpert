@@ -100,7 +100,6 @@ extension Object: RealmCollectionValue {
         RLMInitializeWithValue(self, value, .partialPrivateShared())
     }
 
-
     // MARK: Properties
 
     /// The Realm which manages the object, or `nil` if the object is unmanaged.
@@ -325,7 +324,6 @@ extension Object: ThreadConfined {
         return realm!.freeze(self)
     }
 }
-
 
 /**
  Information about a specific property which changed in an `Object` change notification.

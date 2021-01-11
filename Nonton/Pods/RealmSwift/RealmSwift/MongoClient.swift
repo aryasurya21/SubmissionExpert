@@ -88,7 +88,6 @@ extension FindOptions {
     }
 }
 
-
 /// Options to use when executing a `findOneAndUpdate`, `findOneAndReplace`,
 /// or `findOneAndDelete` command on a `MongoCollection`.
 public typealias FindOneAndModifyOptions = RLMFindOneAndModifyOptions
