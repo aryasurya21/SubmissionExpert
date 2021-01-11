@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 import NFavorite
 import NCore
+import NHome
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,9 +20,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        let homeInteractor = Injector.shared.injectHomeInteractor()
-        let favoriteInteractor: Interactor<Any, [FavoriteDomainModel], GetFavoritesRepository<GetFavoritesLocaleDataSource, FavoriteTransformer>> = Injector.shared.provideFavorite()
-        let homePresenter = HomePresenter(useCase: homeInteractor)
+        let homeInteractor: Interactor<Any, [HomeDomainModel], GetHomeRepository<
+            GetHomeLocalDataSource,
+            GetHomeRemoteDataSource,
+            HomeTransformer
+        >> = Injector.shared.provideHome()
+        
+        let favoriteInteractor: Interactor<Any, [FavoriteDomainModel], GetFavoritesRepository<
+            GetFavoritesLocaleDataSource,
+            FavoriteTransformer
+        >> = Injector.shared.provideFavorite()
+        
+        let homePresenter = GetListPresenter(useCase: homeInteractor)
         let favoritePresenter = GetListPresenter(useCase: favoriteInteractor)
 
         let contentView = ContentView()

@@ -35,6 +35,10 @@ public struct DetailTransformer: Mapper {
         fatalError()
     }
 
+    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [MovieResponse]) -> [DetailModuleEntity] {
+        fatalError()
+    }
+    
     public func transformEntityToDomain(entity: DetailModuleEntity) -> DetailDomainModel {
         return DetailDomainModel(
             id: entity.id,

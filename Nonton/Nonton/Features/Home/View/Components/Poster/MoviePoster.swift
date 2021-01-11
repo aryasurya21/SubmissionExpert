@@ -8,9 +8,10 @@
 import Foundation
 import SwiftUI
 import SDWebImageSwiftUI
+import NHome
 
 struct MoviePoster: View {
-    let movie: MovieModel
+    let movie: HomeDomainModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {

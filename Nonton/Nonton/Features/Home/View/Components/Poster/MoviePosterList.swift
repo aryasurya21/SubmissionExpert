@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import NHome
+import NCore
 
 struct MoviePosterList: View {
-    let movies: [MovieModel]
+    let movies: [HomeDomainModel]
     let title: String
-    let presenter: HomePresenter
+    let presenter: GetListPresenter<
+        Any,
+        HomeDomainModel,
+        Interactor<
+            Any, [HomeDomainModel], GetHomeRepository<
+                GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
+            >>>
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20.0) {
@@ -21,7 +29,7 @@ struct MoviePosterList: View {
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack(alignment: .top, spacing: 20.0) {
                     ForEach(self.movies) { movie in
-                        self.presenter.viewBuilder(movieData: movie) {
+                        self.presenter.viewBuilder(data: movie) {
                             MoviePoster(movie: movie)
                                 .buttonStyle(PlainButtonStyle())
                         }

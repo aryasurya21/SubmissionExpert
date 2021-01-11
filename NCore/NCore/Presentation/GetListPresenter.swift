@@ -23,6 +23,12 @@ where
     private let _useCase: Interactor
 
     @Published public var list: [Response] = []
+    
+    @Published public var upcoming: [Response] = []
+    @Published public var topRated: [Response] = []
+    @Published public var popular: [Response] = []
+    @Published public var nowPlaying: [Response] = []
+    
     @Published public var errorMessage: String = ""
     @Published public var isLoading: Bool = false
     @Published public var isError: Bool = false
@@ -45,7 +51,16 @@ where
                     self.isLoading = false
                 }
             }, receiveValue: { list in
-                self.list = list
+                switch endpoint {
+                case .nowPlaying:
+                    self.nowPlaying = list
+                case .popular:
+                    self.popular = list
+                case .topRated:
+                    self.topRated = list
+                case .upcoming:
+                    self.upcoming = list
+                }
             })
             .store(in: &cancellables)
     }

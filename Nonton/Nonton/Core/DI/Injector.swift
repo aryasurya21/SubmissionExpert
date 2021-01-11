@@ -10,6 +10,7 @@ import RealmSwift
 import NCore
 import NFavorite
 import NDetail
+import NHome
 
 final class Injector {
 
@@ -33,24 +34,12 @@ final class Injector {
         return Interactor(repository) as! U
     }
 
-    private func injectRepository() -> MovieRepositoryProtocol {
-        let realm = try? Realm()
-
-        let local = LocalInstance.shared(realm)
-        let api = APIInstance.shared
-
-        return MovieRepository.shared(api, local)
-    }
-
-    public func injectHomeInteractor() -> HomeUseCaseProtocol {
-        return HomeInteractor(repository: self.injectRepository())
-    }
-
-    public func injectDetailInteractor(movieID: Int) -> DetailUseCaseProtocol {
-        return DetailInteractor(repository: self.injectRepository(), withID: movieID)
-    }
-
-    public func injectFavoriteInteractor() -> FavoriteUseCaseProtocol {
-        return FavoriteInteractor(repository: self.injectRepository())
+    func provideHome<U: UseCase>() -> U where U.Request == Any, U.Response == [HomeDomainModel] {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let locale = GetHomeLocalDataSource(realm: appDelegate.realm)
+        let remote = GetHomeRemoteDataSource()
+        let mapper = HomeTransformer()
+        let repository = GetHomeRepository<GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer>(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
+        return Interactor(repository) as! U
     }
 }

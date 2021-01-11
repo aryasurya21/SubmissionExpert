@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MovieEndPoints: String {
+public enum MovieEndPoints: String {
     case popular
     case nowPlaying = "now_playing"
     case upcoming

@@ -15,4 +15,5 @@ public protocol Mapper {
     func transformResponseToEntity(response: Response) -> Entity
     func transformEntityToDomain(entity: Entity) -> Domain
     func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [Entity]) -> [Domain]
+    func transformResponseToEntities(from endpoint: MovieEndPoints, list: [Response]) -> [Entity]
 }

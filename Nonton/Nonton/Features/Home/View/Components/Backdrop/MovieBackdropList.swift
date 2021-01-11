@@ -7,11 +7,19 @@
 
 import Foundation
 import SwiftUI
+import NHome
+import NCore
 
 struct MovieBackdropList: View {
     let title: String
-    let movies: [MovieModel]
-    let presenter: HomePresenter
+    let movies: [HomeDomainModel]
+    let presenter: GetListPresenter<
+        Any,
+        HomeDomainModel,
+        Interactor<
+            Any, [HomeDomainModel], GetHomeRepository<
+                GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
+            >>>
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -22,7 +30,7 @@ struct MovieBackdropList: View {
            ScrollView(.horizontal, showsIndicators: false) {
                HStack(alignment: .top, spacing: 16) {
                    ForEach(self.movies) { movie in
-                        self.presenter.viewBuilder(movieData: movie) {
+                    self.presenter.viewBuilder(data: movie) {
                            MovieBackdrop(movie: movie)
                         }
                         .frame(width: 250, height: 190)

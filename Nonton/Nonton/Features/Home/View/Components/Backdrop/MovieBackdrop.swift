@@ -7,9 +7,10 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import NHome
 
 struct MovieBackdrop: View {
-    var movie: MovieModel
+    var movie: HomeDomainModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10.0) {

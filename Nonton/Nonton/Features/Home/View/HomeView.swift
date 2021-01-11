@@ -7,49 +7,57 @@
 
 import Foundation
 import SwiftUI
+import NCore
+import NHome
 
 struct HomeView: View {
-    @ObservedObject var presenter: HomePresenter
+    @ObservedObject var presenter: GetListPresenter<
+        Any,
+        HomeDomainModel,
+        Interactor<
+            Any, [HomeDomainModel], GetHomeRepository<
+                GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
+            >>>
 
     var body: some View {
         NavigationView {
-            if self.presenter.error != nil {
-                ErrorView(errorMessage: self.presenter.error?.localizedDescription ?? "")
+            if self.presenter.isError {
+                ErrorView(errorMessage: self.presenter.errorMessage)
             } else if self.presenter.isLoading {
                 ActivityIndicator()
             } else {
                 List {
                     Group {
-                        if self.presenter.nowPlayingMovies != nil {
+                        if self.presenter.nowPlaying.count > 0 {
                             MoviePosterList(
-                                movies: self.presenter.nowPlayingMovies!,
+                                movies: self.presenter.nowPlaying,
                                 title: "Now Playing",
                                 presenter: self.presenter
                             )
                         }
                     }.listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                     Group {
-                        if self.presenter.upcomingMovies != nil {
+                        if self.presenter.upcoming.count > 0 {
                             MovieBackdropList(
                                 title: "Upcoming",
-                                movies: self.presenter.upcomingMovies!,
+                                movies: self.presenter.upcoming,
                                 presenter: self.presenter
                             )
                         }
                     }.listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                     Group {
-                        if self.presenter.topRatedMovies != nil {
+                        if self.presenter.topRated.count > 0 {
                             MovieBackdropList(
                                 title: "Top Rated",
-                                movies: self.presenter.topRatedMovies!,
+                                movies: self.presenter.topRated,
                                 presenter: self.presenter
                             )
                         }
                     }.listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                     Group {
-                        if self.presenter.popularMovies != nil {
+                        if self.presenter.popular.count > 0 {
                             MoviePosterList(
-                                movies: self.presenter.popularMovies!,
+                                movies: self.presenter.popular,
                                 title: "Popular",
                                 presenter: self.presenter
                             )
@@ -58,24 +66,18 @@ struct HomeView: View {
                 }.navigationBarTitle("Nonton Yuk!")
             }
         }.onAppear(perform: {
-            if self.presenter.nowPlayingMovies == nil {
-            self.presenter.getMovies(for: .nowPlaying)
+            if self.presenter.nowPlaying.count == 0 {
+                self.presenter.getList(endpoint: .nowPlaying, request: nil)
             }
-            if self.presenter.popularMovies == nil {
-            self.presenter.getMovies(for: .popular)
+            if self.presenter.topRated.count == 0 {
+                self.presenter.getList(endpoint: .topRated, request: nil)
             }
-            if self.presenter.topRatedMovies == nil {
-            self.presenter.getMovies(for: .topRated)
+            if self.presenter.upcoming.count == 0 {
+                self.presenter.getList(endpoint: .upcoming, request: nil)
             }
-            if self.presenter.upcomingMovies == nil {
-            self.presenter.getMovies(for: .upcoming)
+            if self.presenter.popular.count == 0 {
+                self.presenter.getList(endpoint: .popular, request: nil)
             }
         })
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView(presenter: HomePresenter(useCase: Injector.shared.injectHomeInteractor()))
     }
 }

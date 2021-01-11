@@ -12,19 +12,15 @@ import Alamofire
 
 public struct GetHomeRemoteDataSource: DataSource {
 
-    public typealias Request = Int
+    public typealias Request = Any
     public typealias Response = [MovieResponse]
 
     private let baseURL = "https://api.themoviedb.org/3"
     private let apiKey = "913b4714c3644e3442541d832c16e6fe"
 
-    private let movieID: Int
-
-    public init(movieID: Int) {
-        self.movieID = movieID
-    }
-
-    public func execute(endpoint: MovieEndPoints, request: Int?) -> AnyPublisher<[MovieResponse], Error> {
+    public init(){}
+    
+    public func execute(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[MovieResponse], Error> {
         let parameters: Parameters = [
             "api_key": apiKey
         ]

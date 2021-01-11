@@ -15,14 +15,14 @@ public struct GetHomeRepository<
     Transformer: Mapper
 >: Repository
 where
-    GetHomeRemoteDataSource.Request == Int,
+    GetHomeRemoteDataSource.Request == Any,
     GetHomeRemoteDataSource.Response == [MovieResponse],
     GetHomeLocaleDataSource.Response == HomeModuleEntity,
-    Transformer.Response == Any,
+    Transformer.Response == MovieResponse,
     Transformer.Entity == HomeModuleEntity,
     Transformer.Domain == HomeDomainModel {
    
-    public typealias Request = Int
+    public typealias Request = Any
     public typealias Response = [HomeDomainModel]
 
     private var localeDataSource: GetHomeLocalDataSource
@@ -39,7 +39,7 @@ where
         self.mapper = mapper
     }
 
-    public func execute(endpoint: MovieEndPoints, request: Int?) -> AnyPublisher<[HomeDomainModel], Error> {
+    public func execute(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[HomeDomainModel], Error> {
         return self.localeDataSource.list(endpoint: endpoint)
             .flatMap { result -> AnyPublisher<[HomeDomainModel], Error> in
                 
@@ -60,7 +60,7 @@ where
         }.eraseToAnyPublisher()
     }
     
-    public func toggle(request: Int?) -> AnyPublisher<[HomeDomainModel], Error> {
+    public func toggle(request: Any?) -> AnyPublisher<[HomeDomainModel], Error> {
         fatalError()
     }
 }

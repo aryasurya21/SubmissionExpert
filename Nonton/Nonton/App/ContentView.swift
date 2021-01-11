@@ -8,9 +8,16 @@
 import SwiftUI
 import NCore
 import NFavorite
+import NHome
 
 struct ContentView: View {
-    @EnvironmentObject var homePresenter: HomePresenter
+    @EnvironmentObject var homePresenter: GetListPresenter<
+        Any,
+        HomeDomainModel,
+        Interactor<
+            Any, [HomeDomainModel], GetHomeRepository<
+                GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
+            >>>
     @EnvironmentObject var favoritePresenter: GetListPresenter<
         Any,
         FavoriteDomainModel,
