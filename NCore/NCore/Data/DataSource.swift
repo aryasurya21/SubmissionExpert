@@ -12,5 +12,5 @@ public protocol DataSource {
     associatedtype Request
     associatedtype Response
 
-    func execute(request: Request?) -> AnyPublisher<Response, Error>
+    func execute(endpoint: MovieEndPoints, request: Request?) -> AnyPublisher<Response, Error>
 }

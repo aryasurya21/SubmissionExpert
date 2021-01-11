@@ -14,6 +14,7 @@
 		A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */; };
 		A1AECDFC25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */; };
 		A1AECDFF25AC82FF00FF9709 /* HomeModuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */; };
+		A1AECE3825AC89B400FF9709 /* HomeDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECE3725AC89B400FF9709 /* HomeDomainModel.swift */; };
 		A1D0510825AC7C100093AD5D /* NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D050FE25AC7C100093AD5D /* NHome.framework */; };
 		A1D0510D25AC7C100093AD5D /* NHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0510C25AC7C100093AD5D /* NHomeTests.swift */; };
 		A1D0510F25AC7C100093AD5D /* NHome.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D0510125AC7C100093AD5D /* NHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +56,7 @@
 		A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeLocalDataSource.swift; sourceTree = "<group>"; };
 		A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeRemoteDataSource.swift; sourceTree = "<group>"; };
 		A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleResponse.swift; sourceTree = "<group>"; };
+		A1AECE3725AC89B400FF9709 /* HomeDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDomainModel.swift; sourceTree = "<group>"; };
 		A1D050FE25AC7C100093AD5D /* NHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D0510125AC7C100093AD5D /* NHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHome.h; sourceTree = "<group>"; };
 		A1D0510225AC7C100093AD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		A1AECDE925AC826E00FF9709 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A1AECE3725AC89B400FF9709 /* HomeDomainModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			files = (
 				A1AECDFC25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift in Sources */,
 				A1AECDFF25AC82FF00FF9709 /* HomeModuleResponse.swift in Sources */,
+				A1AECE3825AC89B400FF9709 /* HomeDomainModel.swift in Sources */,
 				A1AECDEB25AC828300FF9709 /* HomeTransformer.swift in Sources */,
 				A1AECDF225AC82B200FF9709 /* GetHomeRepository.swift in Sources */,
 				A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */,

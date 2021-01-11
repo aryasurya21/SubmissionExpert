@@ -73,7 +73,7 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func list(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[DetailModuleEntity], Error> {
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[DetailModuleEntity], Error> {
         fatalError()
     }
 

@@ -10,7 +10,7 @@ import RealmSwift
 import NCore
 
 public struct DetailTransformer: Mapper {
-
+   
     public typealias Response = MovieResponse
     public typealias Entity = DetailModuleEntity
     public typealias Domain = DetailDomainModel
@@ -29,6 +29,10 @@ public struct DetailTransformer: Mapper {
         movieEntity.releaseDate = response.releaseDate ?? ""
         movieEntity.isFavorite = false
         return movieEntity
+    }
+    
+    public func transformResponsesToEntities(responses: [MovieResponse]) -> [DetailModuleEntity] {
+        fatalError()
     }
 
     public func transformEntityToDomain(entity: DetailModuleEntity) -> DetailDomainModel {

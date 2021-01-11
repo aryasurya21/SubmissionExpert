@@ -60,7 +60,7 @@ public struct GetHomeLocalDataSource: LocaleDataSource {
         fatalError()
     }
 
-    public func list(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[HomeModuleEntity], Error> {
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[HomeModuleEntity], Error> {
         return Future<[HomeModuleEntity], Error> { (completion) in
             let movies: Results<HomeModuleEntity> = {
                 realm.objects(HomeModuleEntity.self)

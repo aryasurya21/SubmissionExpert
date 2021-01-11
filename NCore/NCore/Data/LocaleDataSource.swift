@@ -12,7 +12,7 @@ public protocol LocaleDataSource {
     associatedtype Request
     associatedtype Response
 
-    func list(endpoint: MovieEndPoints, request: Request?) -> AnyPublisher<[Response], Error>
+    func list(endpoint: MovieEndPoints) -> AnyPublisher<[Response], Error>
     func add(entities: [Response]) -> AnyPublisher<Bool, Error>
     func get(id: Int) -> AnyPublisher<Response, Error>
     func update(id: String, entity: Response) -> AnyPublisher<Bool, Error>

@@ -11,7 +11,7 @@ import RealmSwift
 import Combine
 
 public struct GetFavoritesLocaleDataSource: LocaleDataSource {
-
+   
     public typealias Request = Any
     public typealias Response = FavoriteModuleEntity
 
@@ -21,7 +21,7 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
         self.realm = realm
     }
 
-    public func list(endpoint: MovieEndPoints, request: Any?) -> AnyPublisher<[FavoriteModuleEntity], Error> {
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[FavoriteModuleEntity], Error> {
         return Future<[FavoriteModuleEntity], Error> { (completion) in
             let movies: Results<FavoriteModuleEntity> = {
                 realm.objects(FavoriteModuleEntity.self)

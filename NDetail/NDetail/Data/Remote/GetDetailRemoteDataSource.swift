@@ -11,7 +11,7 @@ import Combine
 import Alamofire
 
 public struct GetDetailRemoteDataSource: DataSource {
-
+  
     public typealias Request = Int
     public typealias Response = MovieResponse
 
@@ -24,7 +24,7 @@ public struct GetDetailRemoteDataSource: DataSource {
         self.movieID = movieID
     }
 
-    public func execute(request: Int?) -> AnyPublisher<MovieResponse, Error> {
+    public func execute(endpoint: MovieEndPoints, request: Int?) -> AnyPublisher<MovieResponse, Error> {
         let parameters: Parameters = [
             "api_key": apiKey
         ]
