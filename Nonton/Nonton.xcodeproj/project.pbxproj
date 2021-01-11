@@ -11,7 +11,6 @@
 		A10D6DC4256140E500773467 /* MoviePosterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D6DC3256140E500773467 /* MoviePosterList.swift */; };
 		A10FD705255EDC0A0066FA52 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10FD704255EDC0A0066FA52 /* Injector.swift */; };
 		A10FD708255EDE840066FA52 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10FD707255EDE840066FA52 /* HomeView.swift */; };
-		A13DCB9F2576730A00411FCF /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A13DCB9E2576730A00411FCF /* .travis.yml */; };
 		A145173B2561331300D9DD77 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145173A2561331300D9DD77 /* DetailInteractor.swift */; };
 		A14517452561332600D9DD77 /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14517442561332600D9DD77 /* DetailUseCase.swift */; };
 		A14517482561342400D9DD77 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14517472561342400D9DD77 /* DetailPresenter.swift */; };
@@ -28,7 +27,6 @@
 		A1627F7F255E233900E76BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1627F7E255E233900E76BEC /* Assets.xcassets */; };
 		A1627F82255E233900E76BEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1627F81255E233900E76BEC /* Preview Assets.xcassets */; };
 		A1627F85255E233900E76BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1627F83255E233900E76BEC /* LaunchScreen.storyboard */; };
-		A1627F9D255E26F100E76BEC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A1627F9C255E26F100E76BEC /* .swiftlint.yml */; };
 		A1627FCF255E419300E76BEC /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627FCE255E419300E76BEC /* HomePresenter.swift */; };
 		A1627FD5255E41FC00E76BEC /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627FD4255E41FC00E76BEC /* HomeInteractor.swift */; };
 		A1627FDA255E421C00E76BEC /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627FD9255E421C00E76BEC /* HomeUseCase.swift */; };
@@ -81,7 +79,6 @@
 		A10D6DC3256140E500773467 /* MoviePosterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterList.swift; sourceTree = "<group>"; };
 		A10FD704255EDC0A0066FA52 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		A10FD707255EDE840066FA52 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		A13DCB9E2576730A00411FCF /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		A145173A2561331300D9DD77 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		A14517442561332600D9DD77 /* DetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUseCase.swift; sourceTree = "<group>"; };
 		A14517472561342400D9DD77 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
@@ -104,7 +101,6 @@
 		A1627F81255E233900E76BEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1627F84255E233900E76BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1627F86255E233900E76BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1627F9C255E26F100E76BEC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A1627FCE255E419300E76BEC /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		A1627FD4255E41FC00E76BEC /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		A1627FD9255E421C00E76BEC /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
@@ -263,8 +259,6 @@
 		A1627F6C255E233900E76BEC = {
 			isa = PBXGroup;
 			children = (
-				A13DCB9E2576730A00411FCF /* .travis.yml */,
-				A1627F9C255E26F100E76BEC /* .swiftlint.yml */,
 				A1627F77255E233900E76BEC /* Nonton */,
 				A1627F76255E233900E76BEC /* Products */,
 				7D0794C0528058F974643A3D /* Pods */,
@@ -609,8 +603,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13DCB9F2576730A00411FCF /* .travis.yml in Resources */,
-				A1627F9D255E26F100E76BEC /* .swiftlint.yml in Resources */,
 				A1627F85255E233900E76BEC /* LaunchScreen.storyboard in Resources */,
 				A1627F82255E233900E76BEC /* Preview Assets.xcassets in Resources */,
 				A1627F7F255E233900E76BEC /* Assets.xcassets in Resources */,

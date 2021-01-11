@@ -6,6 +6,10 @@ disabled_rules:
 
 included:
   - Nonton
+  - NCore
+  - NDetail
+  - NFavorite
+  - NHome
 
 excluded:
   - Pods
