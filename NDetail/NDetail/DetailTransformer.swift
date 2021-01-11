@@ -10,13 +10,13 @@ import RealmSwift
 import NCore
 
 public struct DetailTransformer: Mapper {
-    
+
     public typealias Response = MovieResponse
     public typealias Entity = DetailModuleEntity
     public typealias Domain = DetailDomainModel
-    
+
     public init() {}
-    
+
     public func transformResponseToEntity(response: MovieResponse) -> DetailModuleEntity {
         let movieEntity = DetailModuleEntity()
         movieEntity.id = response.id ?? 0
@@ -30,7 +30,7 @@ public struct DetailTransformer: Mapper {
         movieEntity.isFavorite = false
         return movieEntity
     }
-    
+
     public func transformEntityToDomain(entity: DetailModuleEntity) -> DetailDomainModel {
         return DetailDomainModel(
             id: entity.id,
@@ -45,7 +45,7 @@ public struct DetailTransformer: Mapper {
             isFavorite: entity.isFavorite
         )
     }
-    
+
     public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [DetailModuleEntity]) -> [DetailDomainModel] {
         return entities.map { movie in
             return DetailDomainModel(

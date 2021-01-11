@@ -9,25 +9,25 @@ import Foundation
 
 public struct DetailDomainModel: Equatable, Identifiable {
     public let id: Int
-    let title: String
-    let backdropPath: String
-    let posterPath: String
-    let overview: String
-    let voteAverage: Double
-    let runtime: Int
-    let movieCategory: String
-    let releaseDate: String
-    let isFavorite: Bool
+    public let title: String
+    public let backdropPath: String
+    public let posterPath: String
+    public let overview: String
+    public let voteAverage: Double
+    public let runtime: Int
+    public let movieCategory: String
+    public let releaseDate: String
+    public var isFavorite: Bool
 
-    var posterImageURL: URL {
+    public var posterImageURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500/\(self.posterPath)")!
     }
 
-    var backdropURL: URL {
+    public var backdropURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500/\(self.backdropPath)")!
     }
 
-    var formattedReleaseDate: String {
+    public var formattedReleaseDate: String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.formatterBehavior = .default
@@ -42,7 +42,7 @@ public struct DetailDomainModel: Equatable, Identifiable {
         return outputDateFormatter.string(from: date ?? Date())
     }
 
-    var formattedDuration: String {
+    public var formattedDuration: String {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .full
         formatter.allowedUnits = [.hour, .minute]
@@ -51,7 +51,7 @@ public struct DetailDomainModel: Equatable, Identifiable {
         return duration ?? "\(runtime) minutes"
     }
 
-    var formattedRating: String {
+    public var formattedRating: String {
         return "\(self.voteAverage.rounded())"
     }
 }

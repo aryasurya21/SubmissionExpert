@@ -9,31 +9,32 @@ import Foundation
 import SwiftUI
 import Combine
 
-public class GetListPresenter<
+public class GetSinglePresenter<
     Request,
     Response,
     Interactor: UseCase
 >: ObservableObject
 where
     Interactor.Request == Request,
-    Interactor.Response == [Response] {
+    Interactor.Response == Response {
 
     private var cancellables: Set<AnyCancellable> = []
 
     private let _useCase: Interactor
-
-    @Published public var list: [Response] = []
+    private let _movieID: Request
+    @Published public var data: Response?
     @Published public var errorMessage: String = ""
     @Published public var isLoading: Bool = false
     @Published public var isError: Bool = false
 
-    public init(useCase: Interactor) {
-        _useCase = useCase
+    public init(useCase: Interactor, movieID: Request) {
+        self._useCase = useCase
+        self._movieID = movieID
     }
 
-    public func getList(endpoint: MovieEndPoints, request: Request?) {
+    public func getData() {
         isLoading = true
-        _useCase.execute(endpoint: endpoint, request: request)
+        _useCase.execute(endpoint: .nowPlaying, request: self._movieID)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -44,12 +45,31 @@ where
                 case .finished:
                     self.isLoading = false
                 }
-            }, receiveValue: { list in
-                self.list = list
+            }, receiveValue: { data in
+                self.data = data
             })
             .store(in: &cancellables)
     }
 
+    func toggleFavoriteMovie() {
+        self.isLoading = true
+        self._useCase.toggleFavoriteMovie()
+        .receive(on: RunLoop.main)
+        .sink(receiveCompletion: { completion in
+          switch completion {
+          case .failure(let error):
+            self.errorMessage = error.localizedDescription
+            self.isError = true
+            self.isLoading = false
+          case .finished:
+            self.isLoading = false
+          }
+        }, receiveValue: { movieData in
+          self.data = movieData
+        })
+        .store(in: &cancellables)
+    }
+    
     public func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
         return content()
     }

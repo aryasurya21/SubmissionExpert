@@ -9,17 +9,17 @@ import Foundation
 import NCore
 
 public struct FavoriteTransformer: Mapper {
-  
+
     public typealias Response = Any
     public typealias Entity = FavoriteModuleEntity
     public typealias Domain = FavoriteDomainModel
-    
-    public init(){}
-    
+
+    public init() {}
+
     public func transformResponseToEntity(response: Any) -> FavoriteModuleEntity {
         fatalError()
     }
-    
+
     public func transformEntityToDomain(entity: FavoriteModuleEntity) -> FavoriteDomainModel {
         return FavoriteDomainModel(
             id: entity.id,
@@ -34,9 +34,9 @@ public struct FavoriteTransformer: Mapper {
             isFavorite: entity.isFavorite
         )
     }
-    
+
     public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [FavoriteModuleEntity]) -> [FavoriteDomainModel] {
-        return entities.map{ en in
+        return entities.map { en in
             return FavoriteDomainModel(
                 id: en.id,
                 title: en.title,

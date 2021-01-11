@@ -7,11 +7,13 @@
 
 import Foundation
 import SwiftUI
+import NCore
+import NDetail
 
 class HomeRouter {
     func goToDetailView(for movie: MovieModel) -> some View {
-        let detailUseCase = Injector.shared.injectDetailInteractor(movieID: movie.id)
-        let detailPresenter = DetailPresenter(useCase: detailUseCase, movieID: movie.id)
+        let detailInteractor: Interactor<Int, DetailDomainModel, GetDetailRepository<GetDetailLocalDataSource, GetDetailRemoteDataSource, DetailTransformer>> = Injector.shared.provideDetail(id: movie.id)
+        let detailPresenter = GetSinglePresenter(useCase: detailInteractor, movieID: movie.id)
         return DetailView(presenter: detailPresenter)
     }
 }

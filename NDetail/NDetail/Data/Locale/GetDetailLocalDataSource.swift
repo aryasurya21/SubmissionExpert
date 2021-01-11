@@ -11,16 +11,16 @@ import Combine
 import RealmSwift
 
 public struct GetDetailLocalDataSource: LocaleDataSource {
-    
+
     public typealias Request = Any
     public typealias Response = DetailModuleEntity
-    
+
     private let realm: Realm
-    
+
     public init(realm: Realm) {
         self.realm = realm
     }
-   
+
     public func get(id: String) -> AnyPublisher<DetailModuleEntity, Error> {
         return Future<DetailModuleEntity, Error> { (completion) in
             let movies  = realm.objects(DetailModuleEntity.self)
@@ -30,7 +30,7 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
             completion(.success(targetMeal))
         }.eraseToAnyPublisher()
     }
-    
+
     public func update(id: String, entity: DetailModuleEntity) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { (completion) in
             guard
@@ -55,15 +55,28 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
             }
         }.eraseToAnyPublisher()
     }
-    
+
     public func toggle(id: Int) -> AnyPublisher<DetailModuleEntity, Error> {
-        fatalError()
+        return Future<DetailModuleEntity, Error> { (completion) in
+            guard let targetMovie = realm.objects(DetailModuleEntity.self).filter("id=\(id)").first
+            else {
+                return completion(.failure(DatabaseError.requestFailed))
+            }
+            do {
+                try self.realm.write {
+                    targetMovie.setValue(!targetMovie.isFavorite, forKey: "isFavorite")
+                }
+                completion(.success(targetMovie))
+            } catch {
+                return completion(.failure(DatabaseError.requestFailed))
+            }
+        }.eraseToAnyPublisher()
     }
-    
+
     public func list(request: Any?) -> AnyPublisher<[DetailModuleEntity], Error> {
         fatalError()
     }
-    
+
     public func add(entities: [DetailModuleEntity]) -> AnyPublisher<Bool, Error> {
         fatalError()
     }

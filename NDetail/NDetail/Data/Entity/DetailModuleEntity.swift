@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 public class DetailModuleEntity: Object {
-    
+
     @objc dynamic var id: Int = 0
     @objc dynamic var title: String = ""
     @objc dynamic var backdropPath: String = ""
@@ -21,4 +21,3 @@ public class DetailModuleEntity: Object {
     @objc dynamic var releaseDate: String = ""
     @objc dynamic var isFavorite: Bool = false
 }
-

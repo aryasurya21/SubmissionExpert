@@ -106,9 +106,9 @@
 			children = (
 				A182291A257E0DB4003690C5 /* Data */,
 				A182291B257E0DB9003690C5 /* Domain */,
+				A182291F257E0DF7003690C5 /* DetailTransformer.swift */,
 				A18228A5257E0C44003690C5 /* NDetail.h */,
 				A18228A6257E0C44003690C5 /* Info.plist */,
-				A182291F257E0DF7003690C5 /* DetailTransformer.swift */,
 			);
 			path = NDetail;
 			sourceTree = "<group>";

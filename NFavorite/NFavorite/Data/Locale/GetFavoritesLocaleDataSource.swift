@@ -14,13 +14,13 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
 
     public typealias Request = Any
     public typealias Response = FavoriteModuleEntity
-    
+
     private let realm: Realm
-    
-    public init(_ realm: Realm){
+
+    public init(_ realm: Realm) {
         self.realm = realm
     }
-    
+
     public func list(request: Any?) -> AnyPublisher<[FavoriteModuleEntity], Error> {
         return Future<[FavoriteModuleEntity], Error> { (completion) in
             let movies: Results<FavoriteModuleEntity> = {
@@ -31,7 +31,7 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
             completion(.success(movies.toCustomObjects(fromType: FavoriteModuleEntity.self)))
         }.eraseToAnyPublisher()
     }
-    
+
     public func toggle(id: Int) -> AnyPublisher<FavoriteModuleEntity, Error> {
         return Future<FavoriteModuleEntity, Error> { (completion) in
             guard
@@ -53,12 +53,12 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
     public func add(entities: [FavoriteModuleEntity]) -> AnyPublisher<Bool, Error> {
         fatalError()
     }
-    
+
     public func get(id: String) -> AnyPublisher<FavoriteModuleEntity, Error> {
         fatalError()
     }
 
     public func update(id: String, entity: FavoriteModuleEntity) -> AnyPublisher<Bool, Error> {
         fatalError()
-    }    
+    }
 }

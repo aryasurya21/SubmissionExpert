@@ -11,9 +11,8 @@ public protocol Mapper {
     associatedtype Response
     associatedtype Entity
     associatedtype Domain
-    
+
     func transformResponseToEntity(response: Response) -> Entity
     func transformEntityToDomain(entity: Entity) -> Domain
     func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [Entity]) -> [Domain]
 }
-

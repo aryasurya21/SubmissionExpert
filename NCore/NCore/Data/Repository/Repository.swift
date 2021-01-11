@@ -11,6 +11,6 @@ import Combine
 public protocol Repository {
     associatedtype Request
     associatedtype Response
-    
+
     func execute(endpoint: MovieEndPoints, request: Request?) -> AnyPublisher<Response, Error>
 }

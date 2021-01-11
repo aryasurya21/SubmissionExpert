@@ -11,20 +11,20 @@ import Combine
 import Alamofire
 
 public struct GetDetailRemoteDataSource: DataSource {
-    
-    public typealias Request = Any
+
+    public typealias Request = Int
     public typealias Response = MovieResponse
-    
+
     private let baseURL = "https://api.themoviedb.org/3"
     private let apiKey = "913b4714c3644e3442541d832c16e6fe"
 
-    private let movieID: String
-    
-    public init(movieID: String){
+    private let movieID: Int
+
+    public init(movieID: Int) {
         self.movieID = movieID
     }
-    
-    public func execute(request: Any?) -> AnyPublisher<MovieResponse, Error> {
+
+    public func execute(request: Int?) -> AnyPublisher<MovieResponse, Error> {
         let parameters: Parameters = [
             "api_key": apiKey
         ]
