@@ -39,9 +39,9 @@ where
                 .eraseToAnyPublisher()
     }
 
-    public func toggle(movieID: Int) -> AnyPublisher<FavoriteDomainModel, Error> {
-        return self.localeDataSource.toggle(id: movieID)
-            .map { self.mapper.transformEntityToDomain(entity: $0) }
+    public func toggle(request: Any?) -> AnyPublisher<[FavoriteDomainModel], Error> {
+        return self.localeDataSource.toggle(id: request as? Int ?? 0)
+            .map { [self.mapper.transformEntityToDomain(entity: $0)] }
             .eraseToAnyPublisher()
     }
 }

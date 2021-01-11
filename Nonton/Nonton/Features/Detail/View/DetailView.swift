@@ -28,7 +28,7 @@ struct DetailView: View {
                 ActivityIndicator()
             } else {
                 VStack {
-                    WebImage(url:  self.presenter.data?.backdropURL ?? URL(string: ""))
+                    WebImage(url: self.presenter.data?.backdropURL ?? URL(string: ""))
                         .resizable()
                         .indicator(.activity)
                         .aspectRatio(16/9, contentMode: .fit)
@@ -37,7 +37,7 @@ struct DetailView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     Spacer()
-                    if let movie = self.presenter.data?.isFavorite {
+                    if self.presenter.data?.isFavorite ?? false {
                         Image(systemName: "heart.fill")
                             .foregroundColor(Color.red)
                             .padding()
@@ -117,5 +117,5 @@ struct DetailView: View {
         )
     })
         }
-    
+
 }

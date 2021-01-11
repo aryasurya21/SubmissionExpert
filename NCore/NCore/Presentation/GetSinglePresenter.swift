@@ -51,9 +51,9 @@ where
             .store(in: &cancellables)
     }
 
-    func toggleFavoriteMovie() {
+    public func toggleFavoriteMovie() {
         self.isLoading = true
-        self._useCase.toggleFavoriteMovie()
+        self._useCase.toggle(request: self._movieID)
         .receive(on: RunLoop.main)
         .sink(receiveCompletion: { completion in
           switch completion {
@@ -69,7 +69,7 @@ where
         })
         .store(in: &cancellables)
     }
-    
+
     public func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
         return content()
     }

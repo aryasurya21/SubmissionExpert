@@ -21,11 +21,11 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         self.realm = realm
     }
 
-    public func get(id: String) -> AnyPublisher<DetailModuleEntity, Error> {
+    public func get(id: Int) -> AnyPublisher<DetailModuleEntity, Error> {
         return Future<DetailModuleEntity, Error> { (completion) in
             let movies  = realm.objects(DetailModuleEntity.self)
                     .filter("id=\(id)")
-
+            print(movies)
             guard let targetMeal = movies.first else { return completion(.failure(DatabaseError.requestFailed))}
             completion(.success(targetMeal))
         }.eraseToAnyPublisher()

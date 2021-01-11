@@ -10,7 +10,7 @@ import NCore
 import NFavorite
 
 struct ContentView: View {
-    @EnvironmentObject var homePresenter: HomePresenter
+    @EnvironmentObject var homePresenter: GetListPresenter<Any, MovieModel,Interactor<Any, [MovieModel], 
     @EnvironmentObject var favoritePresenter: GetListPresenter<
         Any,
         FavoriteDomainModel,

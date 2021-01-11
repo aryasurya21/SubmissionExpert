@@ -89,6 +89,10 @@
 		A14554B025623C5600FF16CA /* FavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUseCase.swift; sourceTree = "<group>"; };
 		A14554BB2562433C00FF16CA /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
 		A14554BF25624E7800FF16CA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A161A85A25AC640F00BB9F73 /* NHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHomeTests.swift; sourceTree = "<group>"; };
+		A161A85B25AC640F00BB9F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A161A85D25AC640F00BB9F73 /* NHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHome.h; sourceTree = "<group>"; };
+		A161A85E25AC640F00BB9F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1627F75255E233900E76BEC /* Nonton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nonton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1627F78255E233900E76BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1627F7A255E233900E76BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		67BD0888D89A004729646D50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A161A85825AC640F00BB9F73 /* NHome */,
 				A1B704E2258252F1000F71D0 /* NDetail.framework */,
 				A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */,
 				A1A73688257B70B400BCBAED /* NCore.framework */,
@@ -219,6 +224,34 @@
 				A14554BF25624E7800FF16CA /* ProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A161A85825AC640F00BB9F73 /* NHome */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85925AC640F00BB9F73 /* NHomeTests */,
+				A161A85C25AC640F00BB9F73 /* NHome */,
+			);
+			name = NHome;
+			path = ../NHome;
+			sourceTree = "<group>";
+		};
+		A161A85925AC640F00BB9F73 /* NHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85A25AC640F00BB9F73 /* NHomeTests.swift */,
+				A161A85B25AC640F00BB9F73 /* Info.plist */,
+			);
+			path = NHomeTests;
+			sourceTree = "<group>";
+		};
+		A161A85C25AC640F00BB9F73 /* NHome */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85D25AC640F00BB9F73 /* NHome.h */,
+				A161A85E25AC640F00BB9F73 /* Info.plist */,
+			);
+			path = NHome;
 			sourceTree = "<group>";
 		};
 		A1627F6C255E233900E76BEC = {

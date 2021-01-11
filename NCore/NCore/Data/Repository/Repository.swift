@@ -13,4 +13,5 @@ public protocol Repository {
     associatedtype Response
 
     func execute(endpoint: MovieEndPoints, request: Request?) -> AnyPublisher<Response, Error>
+    func toggle(request: Request?) -> AnyPublisher<Response, Error>
 }
