@@ -11,7 +11,7 @@ import NFavorite
 
 struct MovieRow: View {
     var movie: FavoriteDomainModel
-
+    
     var body: some View {
         VStack {
             WebImage(url: movie.backdropURL)
@@ -30,6 +30,9 @@ struct MovieRow: View {
                     .foregroundColor(Color.yellow)
             }.padding([.leading, .trailing], 10)
         }.cornerRadius(6)
+        .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+            
+        })
         .shadow(radius: 10)
         .padding()
     }

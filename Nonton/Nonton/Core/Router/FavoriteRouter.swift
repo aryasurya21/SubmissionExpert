@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 import NDetail
 import NCore
+import NHome
+import NFavorite
 
 class FavoriteRouter {
-    func goToDetailView(for movie: MovieModel) -> some View {
+    func goToDetailView(for movie: FavoriteDomainModel) -> some View {
         let detailInteractor: Interactor<
             Int,
             DetailDomainModel,
