@@ -16,4 +16,7 @@
    <FileRef
       location = "group:../NFavorite/NFavorite.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../NHome/NHome.xcodeproj">
+   </FileRef>
 </Workspace>

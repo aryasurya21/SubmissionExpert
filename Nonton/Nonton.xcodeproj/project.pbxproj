@@ -49,6 +49,8 @@
 		A1CC90E7257B8FF800862BC1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC90E6257B8FF800862BC1 /* ActivityIndicator.swift */; };
 		A1CC90E9257B906100862BC1 /* MovieEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC90E8257B906100862BC1 /* MovieEnum.swift */; };
 		A1CC90ED257B90FD00862BC1 /* MovieMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC90EC257B90FD00862BC1 /* MovieMapper.swift */; };
+		A1D8BD1925AC7CD400065969 /* NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1825AC7CD400065969 /* NHome.framework */; };
+		A1D8BD1A25AC7CD400065969 /* NHome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1825AC7CD400065969 /* NHome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1E015A2257DD4AB00CFF9B9 /* NFavorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */; };
 		A1E015A3257DD4AB00CFF9B9 /* NFavorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1FD9A3F2562C9F60034399D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD9A3E2562C9F60034399D /* ErrorView.swift */; };
@@ -64,6 +66,7 @@
 			files = (
 				A1A7368A257B70B400BCBAED /* NCore.framework in Embed Frameworks */,
 				A1E015A3257DD4AB00CFF9B9 /* NFavorite.framework in Embed Frameworks */,
+				A1D8BD1A25AC7CD400065969 /* NHome.framework in Embed Frameworks */,
 				A1B704E4258252F1000F71D0 /* NDetail.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -120,6 +123,7 @@
 		A1CC90E6257B8FF800862BC1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		A1CC90E8257B906100862BC1 /* MovieEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEnum.swift; sourceTree = "<group>"; };
 		A1CC90EC257B90FD00862BC1 /* MovieMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMapper.swift; sourceTree = "<group>"; };
+		A1D8BD1825AC7CD400065969 /* NHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFavorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FD9A3E2562C9F60034399D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E88B9731B4DD75410CE7C47A /* Pods-Nonton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nonton.release.xcconfig"; path = "Target Support Files/Pods-Nonton/Pods-Nonton.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D8BD1925AC7CD400065969 /* NHome.framework in Frameworks */,
 				A1E015A2257DD4AB00CFF9B9 /* NFavorite.framework in Frameworks */,
 				A1A73689257B70B400BCBAED /* NCore.framework in Frameworks */,
 				A1B704E3258252F1000F71D0 /* NDetail.framework in Frameworks */,
@@ -143,6 +148,7 @@
 		67BD0888D89A004729646D50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1D8BD1825AC7CD400065969 /* NHome.framework */,
 				A161A85825AC640F00BB9F73 /* NHome */,
 				A1B704E2258252F1000F71D0 /* NDetail.framework */,
 				A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */,

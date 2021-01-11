@@ -30,3 +30,11 @@ target 'NDetail' do
   pod 'SDWebImageSwiftUI'
 end
 
+target 'NHome' do
+  project '../NHome/NHome'
+  pod 'Alamofire'
+  pod 'RealmSwift'
+  pod 'SDWebImageSwiftUI'
+end
+
+
