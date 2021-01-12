@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             GetFavoritesLocaleDataSource,
             FavoriteTransformer
         >> = Injector.shared.provideFavorite()
-        
+
         let homePresenter = GetListPresenter(useCase: homeInteractor, router: homeRouter)
         let favoritePresenter = GetListPresenter(useCase: favoriteInteractor, router: favRouter)
 

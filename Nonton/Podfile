@@ -37,6 +37,10 @@ target 'NHome' do
   pod 'SDWebImageSwiftUI'
 end
 
+target 'NProfile' do
+  project '../NProfile/NProfile'
+end
+
 
 
 

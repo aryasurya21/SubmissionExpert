@@ -13,10 +13,8 @@ import NHome
 import NFavorite
 
 public class FavoriteRouter: Router {
-    
     public typealias Request = Any
     public typealias Destination = DetailView
-    
     public func navigate(with request: Any?) -> DetailView {
         guard let request = request as? FavoriteDomainModel else { fatalError() }
         let detailInteractor: Interactor<Int, DetailDomainModel, GetDetailRepository<

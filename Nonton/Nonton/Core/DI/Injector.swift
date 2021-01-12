@@ -30,7 +30,11 @@ final class Injector {
         let locale = GetDetailLocalDataSource(realm: appDelegate.realm)
         let remote = GetDetailRemoteDataSource(movieID: id)
         let mapper = DetailTransformer()
-        let repository = GetDetailRepository<GetDetailLocalDataSource, GetDetailRemoteDataSource, DetailTransformer>(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
+        let repository = GetDetailRepository<
+            GetDetailLocalDataSource,
+            GetDetailRemoteDataSource, DetailTransformer>(
+            localeDataSource: locale,
+            remoteDataSource: remote, mapper: mapper)
         return Interactor(repository) as! U
     }
 
@@ -39,7 +43,13 @@ final class Injector {
         let locale = GetHomeLocalDataSource(realm: appDelegate.realm)
         let remote = GetHomeRemoteDataSource()
         let mapper = HomeTransformer()
-        let repository = GetHomeRepository<GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer>(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
+        let repository = GetHomeRepository<
+            GetHomeLocalDataSource,
+            GetHomeRemoteDataSource,
+            HomeTransformer>(
+            localeDataSource: locale,
+            remoteDataSource: remote,
+            mapper: mapper)
         return Interactor(repository) as! U
     }
 }

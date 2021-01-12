@@ -11,7 +11,7 @@ import NFavorite
 
 struct MovieRow: View {
     var movie: FavoriteDomainModel
-    
+
     var body: some View {
         VStack {
             WebImage(url: movie.backdropURL)

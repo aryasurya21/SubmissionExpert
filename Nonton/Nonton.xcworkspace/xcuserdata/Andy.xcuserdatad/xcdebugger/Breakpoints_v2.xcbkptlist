@@ -1272,7 +1272,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "67EE456A-BF3B-4EB1-A7DC-7D7214A84D31"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
@@ -1336,7 +1336,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "24334DEE-2A41-4869-9BEE-A2E3F28E7856"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1352,7 +1352,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "700BF3FE-5CBD-4D65-BDD0-924FE2BC18E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1368,7 +1368,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "60779559-B566-475C-B433-8138563DF8C1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1384,7 +1384,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
@@ -1448,7 +1448,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FD8DF225-3FB9-4CB5-B837-45F871032FBF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NCore/NCore/Presentation/GetSinglePresenter.swift"
@@ -1480,7 +1480,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EBF324A7-8B26-40BA-9D95-0F83042077C2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NCore/NCore/Presentation/GetSinglePresenter.swift"
@@ -1496,7 +1496,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "870A6293-823E-43F9-B25C-2A41D1DE1BDB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1512,7 +1512,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "34D4CAF6-AE66-465A-8F59-07956F505A87"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1560,7 +1560,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9A1E677D-0AF4-4B07-82EE-F944D16C419B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"

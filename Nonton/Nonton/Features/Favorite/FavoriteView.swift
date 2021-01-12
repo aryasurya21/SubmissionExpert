@@ -10,9 +10,14 @@ import NCore
 import NFavorite
 
 struct FavoriteView: View {
-    @ObservedObject var presenter: GetListPresenter<Any, FavoriteDomainModel, Interactor<Any, [FavoriteDomainModel], GetFavoritesRepository<GetFavoritesLocaleDataSource, FavoriteTransformer>>,
+    @ObservedObject var presenter: GetListPresenter<Any, FavoriteDomainModel,
+        Interactor<Any, [FavoriteDomainModel],
+            GetFavoritesRepository<
+            GetFavoritesLocaleDataSource,
+            FavoriteTransformer
+        >>,
         FavoriteRouter>
-    
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -24,7 +29,7 @@ struct FavoriteView: View {
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(self.presenter.list) { movie in
                             ZStack {
-                                self.presenter.viewBuilder(data: movie) {                    
+                                self.presenter.viewBuilder(data: movie) {
                                     MovieRow(movie: movie)
                                 }.buttonStyle(PlainButtonStyle())
                             }
@@ -35,9 +40,7 @@ struct FavoriteView: View {
                         .font(.headline).navigationBarTitle("Favorite Movies", displayMode: .large)
                 }
             }.onAppear {
-                if self.presenter.list.count == 0 {
-                    self.presenter.getList(endpoint: nil, request: nil)
-                }
+                self.presenter.getList(endpoint: nil, request: nil)
             }.navigationBarTitle("Favorite Movies")
         }
 
