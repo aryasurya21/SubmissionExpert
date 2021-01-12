@@ -17,14 +17,16 @@ struct ContentView: View {
         Interactor<
             Any, [HomeDomainModel], GetHomeRepository<
                 GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
-            >>>
+            >>,
+        HomeRouter>
     @EnvironmentObject var favoritePresenter: GetListPresenter<
         Any,
         FavoriteDomainModel,
         Interactor<
             Any, [FavoriteDomainModel], GetFavoritesRepository<
                 GetFavoritesLocaleDataSource, FavoriteTransformer
-            >>>
+            >>,
+        FavoriteRouter>
 
     var body: some View {
         TabView {

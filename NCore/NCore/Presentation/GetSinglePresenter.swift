@@ -17,7 +17,7 @@ public class GetSinglePresenter<
 where
     Interactor.Request == Request,
     Interactor.Response == Response {
-
+    
     private var cancellables: Set<AnyCancellable> = []
 
     private let _useCase: Interactor
@@ -70,7 +70,8 @@ where
         .store(in: &cancellables)
     }
 
-    public func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
+    public func viewBuilder<Content: View, Router>(data: Response, @ViewBuilder content: () -> Content) -> some View {
+        
         return content()
     }
 }

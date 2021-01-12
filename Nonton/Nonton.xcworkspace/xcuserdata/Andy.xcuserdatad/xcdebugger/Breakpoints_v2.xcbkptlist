@@ -654,8 +654,8 @@
             filePath = "Nonton/App/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "scene(_:willConnectTo:options:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1300,14 +1300,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FFF4F0EA-C070-4E81-B676-8E9C747189A3 - 8ce1ac63ffc27157"
+                  uuid = "FFF4F0EA-C070-4E81-B676-8E9C747189A3 - ca63c156844ca6c2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Result&lt;NDetail.MovieResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailRemoteDataSource.execute(request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.MovieResponse, Swift.Error&gt;"
+                  symbolName = "closure #1 ((Swift.Result&lt;NDetail.MovieResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailRemoteDataSource.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.MovieResponse, Swift.Error&gt;"
                   moduleName = "NDetail"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpertCapstone_Arya/NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -1315,14 +1315,14 @@
                   offsetFromSymbolStart = "1774">
                </Location>
                <Location
-                  uuid = "FFF4F0EA-C070-4E81-B676-8E9C747189A3 - 278c91138e677ac3"
+                  uuid = "FFF4F0EA-C070-4E81-B676-8E9C747189A3 - aa755933fd89dfdd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NDetail.MovieResponse, Alamofire.AFError&gt;) -&gt; () in closure #1 ((Swift.Result&lt;NDetail.MovieResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailRemoteDataSource.execute(request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.MovieResponse, Swift.Error&gt;"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NDetail.MovieResponse, Alamofire.AFError&gt;) -&gt; () in closure #1 ((Swift.Result&lt;NDetail.MovieResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailRemoteDataSource.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.MovieResponse, Swift.Error&gt;"
                   moduleName = "NDetail"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpertCapstone_Arya/NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -1336,7 +1336,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "24334DEE-2A41-4869-9BEE-A2E3F28E7856"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1352,7 +1352,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "700BF3FE-5CBD-4D65-BDD0-924FE2BC18E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1384,7 +1384,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
@@ -1392,18 +1392,18 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "init(realm:)"
+            landmarkName = "get(id:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 1c45b510a4bff21"
+                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 6190e70bb6c64928"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NDetail.GetDetailLocalDataSource.get(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;NDetail.DetailModuleEntity, Swift.Error&gt;"
                   moduleName = "NDetail"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpertCapstone_Arya/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -1411,14 +1411,14 @@
                   offsetFromSymbolStart = "34">
                </Location>
                <Location
-                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 619e5a390e27fb36"
+                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 1cae663b2aa4d31"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 ((Swift.Result&lt;NDetail.DetailModuleEntity, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailLocalDataSource.get(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;NDetail.DetailModuleEntity, Swift.Error&gt;"
                   moduleName = "NDetail"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpertCapstone_Arya/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
@@ -1432,7 +1432,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C9C2AFF1-7F1C-4BF1-B434-27B51DBFCD56"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
@@ -1448,7 +1448,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C5A87944-83DB-4436-9DBC-0B5B277876A2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"

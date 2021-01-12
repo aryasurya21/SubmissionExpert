@@ -25,14 +25,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             GetHomeRemoteDataSource,
             HomeTransformer
         >> = Injector.shared.provideHome()
-        
+        let homeRouter = HomeRouter()
+        let favRouter = FavoriteRouter()
         let favoriteInteractor: Interactor<Any, [FavoriteDomainModel], GetFavoritesRepository<
             GetFavoritesLocaleDataSource,
             FavoriteTransformer
         >> = Injector.shared.provideFavorite()
         
-        let homePresenter = GetListPresenter(useCase: homeInteractor)
-        let favoritePresenter = GetListPresenter(useCase: favoriteInteractor)
+        let homePresenter = GetListPresenter(useCase: homeInteractor, router: homeRouter)
+        let favoritePresenter = GetListPresenter(useCase: favoriteInteractor, router: favRouter)
 
         let contentView = ContentView()
             .environmentObject(homePresenter)

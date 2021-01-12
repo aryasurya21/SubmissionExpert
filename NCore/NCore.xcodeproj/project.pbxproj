@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E10DEDBCB270D92B3F726C0 /* Pods_NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EC23EDF5D501D858A694F5 /* Pods_NCore.framework */; };
+		A119A04025AD4769008C0D5A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119A03F25AD4769008C0D5A /* Router.swift */; };
 		A15000AC257B5DE8004018A9 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15000A2257B5DE8004018A9 /* NCore.framework */; };
 		A15000B1257B5DE8004018A9 /* NCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15000B0257B5DE8004018A9 /* NCoreTests.swift */; };
 		A15000B3257B5DE8004018A9 /* NCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A15000A5257B5DE8004018A9 /* NCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		01EC23EDF5D501D858A694F5 /* Pods_NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5398F28077CA68E87EC1E0C0 /* Pods-NCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCore.debug.xcconfig"; path = "Target Support Files/Pods-NCore/Pods-NCore.debug.xcconfig"; sourceTree = "<group>"; };
+		A119A01E25AD4532008C0D5A /* NRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A119A03F25AD4769008C0D5A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A15000A2257B5DE8004018A9 /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15000A5257B5DE8004018A9 /* NCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCore.h; sourceTree = "<group>"; };
 		A15000A6257B5DE8004018A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		1C4CD47C8860124ED4F61577 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A119A01E25AD4532008C0D5A /* NRouter.framework */,
 				01EC23EDF5D501D858A694F5 /* Pods_NCore.framework */,
 			);
 			name = Frameworks;
@@ -93,6 +97,14 @@
 			);
 			name = Pods;
 			path = ../Nonton/Pods;
+			sourceTree = "<group>";
+		};
+		A119A03E25AD4761008C0D5A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A119A03F25AD4769008C0D5A /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		A1500098257B5DE8004018A9 = {
@@ -118,6 +130,7 @@
 		A15000A4257B5DE8004018A9 /* NCore */ = {
 			isa = PBXGroup;
 			children = (
+				A119A03E25AD4761008C0D5A /* Router */,
 				A1FF6510257B8AAE002BD525 /* Helper */,
 				A1A7369C257B7C0900BCBAED /* Presentation */,
 				A1A7369B257B7C0400BCBAED /* Extension */,
@@ -331,6 +344,7 @@
 				A1A736A7257B7D7400BCBAED /* LocaleDataSource.swift in Sources */,
 				A1527D8525A7F51100305738 /* GetSinglePresenter.swift in Sources */,
 				A1A736A3257B7D3800BCBAED /* DataSource.swift in Sources */,
+				A119A04025AD4769008C0D5A /* Router.swift in Sources */,
 				A1CC90EF257B912A00862BC1 /* MovieMapper.swift in Sources */,
 				A1A736AB257B7DBF00BCBAED /* Interactor.swift in Sources */,
 				A1E015FA257DE69500CFF9B9 /* MovieEnum.swift in Sources */,

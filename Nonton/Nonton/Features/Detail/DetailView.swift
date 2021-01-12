@@ -10,7 +10,7 @@ import SDWebImageSwiftUI
 import NCore
 import NDetail
 
-struct DetailView: View {
+public struct DetailView: View {
     @ObservedObject var presenter: GetSinglePresenter<Int, DetailDomainModel,
         Interactor<Int, DetailDomainModel,
             GetDetailRepository<
@@ -22,7 +22,7 @@ struct DetailView: View {
 
     @State private var showPopup = false
 
-    var body: some View {
+    public var body: some View {
         ScrollView {
             if self.presenter.isLoading {
                 ActivityIndicator()
@@ -112,10 +112,7 @@ struct DetailView: View {
                 \(presenter.data?.isFavorite ?? false ? "favorited" : "unfavorited")
                 this movie!
                 """
-            ),
-          dismissButton: .default(Text("OK"))
-        )
-    })
-        }
-
+                ),
+          dismissButton: .default(Text("OK")))})
+    }
 }

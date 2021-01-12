@@ -12,16 +12,18 @@ import Combine
 public class GetListPresenter<
     Request,
     Response,
-    Interactor: UseCase
+    Interactor: UseCase,
+    DestRouter: Router
 >: ObservableObject
 where
     Interactor.Request == Request,
-    Interactor.Response == [Response] {
+    Interactor.Response == [Response],
+    DestRouter.Request == Any {
 
     private var cancellables: Set<AnyCancellable> = []
 
     private let _useCase: Interactor
-
+    private let router: DestRouter
     @Published public var list: [Response] = []
     
     @Published public var upcoming: [Response] = []
@@ -33,13 +35,14 @@ where
     @Published public var isLoading: Bool = false
     @Published public var isError: Bool = false
 
-    public init(useCase: Interactor) {
-        _useCase = useCase
+    public init(useCase: Interactor, router: DestRouter) {
+        self._useCase = useCase
+        self.router = router
     }
 
-    public func getList(endpoint: MovieEndPoints, request: Request?) {
+    public func getList(endpoint: MovieEndPoints?, request: Request?) {
         isLoading = true
-        _useCase.execute(endpoint: endpoint, request: request)
+        _useCase.execute(endpoint: endpoint ?? .nowPlaying, request: request)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -60,12 +63,15 @@ where
                     self.topRated = list
                 case .upcoming:
                     self.upcoming = list
+                case .none:
+                    self.list = list
                 }
             })
             .store(in: &cancellables)
     }
 
     public func viewBuilder<Content: View>(data: Response, @ViewBuilder content: () -> Content) -> some View {
-        return content()
+        NavigationLink(
+            destination: self.router.navigate(with: data)){ return content() }
     }
 }

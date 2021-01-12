@@ -17,7 +17,8 @@ struct HomeView: View {
         Interactor<
             Any, [HomeDomainModel], GetHomeRepository<
                 GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
-            >>>
+            >>,
+        HomeRouter>
 
     var body: some View {
         NavigationView {

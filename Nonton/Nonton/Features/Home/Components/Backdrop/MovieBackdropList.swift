@@ -19,7 +19,8 @@ struct MovieBackdropList: View {
         Interactor<
             Any, [HomeDomainModel], GetHomeRepository<
                 GetHomeLocalDataSource, GetHomeRemoteDataSource, HomeTransformer
-            >>>
+            >>,
+        HomeRouter>
 
     var body: some View {
         VStack(alignment: .leading) {

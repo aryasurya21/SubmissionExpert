@@ -12,17 +12,19 @@ import NCore
 import NHome
 import NFavorite
 
-class FavoriteRouter {
-    func goToDetailView(for movie: FavoriteDomainModel) -> some View {
-        let detailInteractor: Interactor<
-            Int,
-            DetailDomainModel,
-            GetDetailRepository<
-                GetDetailLocalDataSource,
-                GetDetailRemoteDataSource,
-                DetailTransformer
-            >> = Injector.shared.provideDetail(id: movie.id)
-        let detailPresenter = GetSinglePresenter(useCase: detailInteractor, movieID: movie.id)
+public class FavoriteRouter: Router {
+    
+    public typealias Request = Any
+    public typealias Destination = DetailView
+    
+    public func navigate(with request: Any?) -> DetailView {
+        guard let request = request as? FavoriteDomainModel else { fatalError() }
+        let detailInteractor: Interactor<Int, DetailDomainModel, GetDetailRepository<
+            GetDetailLocalDataSource,
+            GetDetailRemoteDataSource,
+            DetailTransformer>>
+        = Injector.shared.provideDetail(id: request.id)
+        let detailPresenter = GetSinglePresenter(useCase: detailInteractor, movieID: request.id)
         return DetailView(presenter: detailPresenter)
     }
 }

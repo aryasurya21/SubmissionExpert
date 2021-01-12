@@ -10,15 +10,21 @@ import SwiftUI
 import NCore
 import NDetail
 import NFavorite
+import NHome
 
-class HomeRouter {
-    func goToDetailView(for movie: FavoriteDomainModel) -> some View {
+public class HomeRouter: Router {
+    
+    public typealias Request = Any
+    public typealias Destination = DetailView
+    
+    public func navigate(with request: Any?) -> DetailView {
+        guard let request = request as? HomeDomainModel else { fatalError() }
         let detailInteractor: Interactor<Int, DetailDomainModel, GetDetailRepository<
             GetDetailLocalDataSource,
             GetDetailRemoteDataSource,
             DetailTransformer>>
-            = Injector.shared.provideDetail(id: movie.id)
-        let detailPresenter = GetSinglePresenter(useCase: detailInteractor, movieID: movie.id)
+            = Injector.shared.provideDetail(id: request.id)
+        let detailPresenter = GetSinglePresenter(useCase: detailInteractor, movieID: request.id)
         return DetailView(presenter: detailPresenter)
     }
 }
