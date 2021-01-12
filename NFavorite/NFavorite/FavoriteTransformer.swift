@@ -11,20 +11,20 @@ import NCore
 public struct FavoriteTransformer: Mapper {
     
     public typealias Response = Any
-    public typealias Entity = FavoriteModuleEntity
+    public typealias Entity = MovieEntity
     public typealias Domain = FavoriteDomainModel
 
     public init() {}
 
-    public func transformResponseToEntity(response: Any) -> FavoriteModuleEntity {
+    public func transformResponseToEntity(response: Any) -> MovieEntity {
         fatalError()
     }
     
-    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [Any]) -> [FavoriteModuleEntity] {
+    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [Any]) -> [MovieEntity] {
         fatalError()
     }
     
-    public func transformEntityToDomain(entity: FavoriteModuleEntity) -> FavoriteDomainModel {
+    public func transformEntityToDomain(entity: MovieEntity) -> FavoriteDomainModel {
         return FavoriteDomainModel(
             id: entity.id,
             title: entity.title,
@@ -39,7 +39,7 @@ public struct FavoriteTransformer: Mapper {
         )
     }
 
-    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [FavoriteModuleEntity]) -> [FavoriteDomainModel] {
+    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [MovieEntity]) -> [FavoriteDomainModel] {
         return entities.map { en in
             return FavoriteDomainModel(
                 id: en.id,

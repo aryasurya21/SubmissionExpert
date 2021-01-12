@@ -17,9 +17,9 @@ public struct GetHomeRepository<
 where
     GetHomeRemoteDataSource.Request == Any,
     GetHomeRemoteDataSource.Response == [MovieResponse],
-    GetHomeLocaleDataSource.Response == HomeModuleEntity,
+    GetHomeLocaleDataSource.Response == MovieEntity,
     Transformer.Response == MovieResponse,
-    Transformer.Entity == HomeModuleEntity,
+    Transformer.Entity == MovieEntity,
     Transformer.Domain == HomeDomainModel {
    
     public typealias Request = Any

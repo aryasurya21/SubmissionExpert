@@ -14,9 +14,9 @@ public struct GetFavoritesRepository<
     Transformer: Mapper
 >: Repository
 where
-    GetFavoritesLocaleDataSource.Response == FavoriteModuleEntity,
+    GetFavoritesLocaleDataSource.Response == MovieEntity,
     Transformer.Response == Any,
-    Transformer.Entity == FavoriteModuleEntity,
+    Transformer.Entity == MovieEntity,
     Transformer.Domain == FavoriteDomainModel {
 
     public typealias Request = Any

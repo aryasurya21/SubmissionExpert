@@ -12,14 +12,14 @@ import NCore
 public struct HomeTransformer: Mapper {
    
     public typealias Response = MovieResponse
-    public typealias Entity = HomeModuleEntity
+    public typealias Entity = MovieEntity
     public typealias Domain = HomeDomainModel
 
     public init() {}
 
-    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [MovieResponse]) -> [HomeModuleEntity] {
+    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [MovieResponse]) -> [MovieEntity] {
         return list.map { movie in
-            let entity = HomeModuleEntity()
+            let entity = MovieEntity()
             entity.id = movie.id ?? 0
             entity.title = movie.title ?? ""
             entity.backdropPath = movie.backdropPath ?? ""
@@ -32,7 +32,7 @@ public struct HomeTransformer: Mapper {
         }
     }
     
-    func transformEntitiesToDomains(from endpoint: MovieEndPoints, movies: [HomeModuleEntity]) -> [HomeDomainModel] {
+    func transformEntitiesToDomains(from endpoint: MovieEndPoints, movies: [MovieEntity]) -> [HomeDomainModel] {
         return movies.map { movie in
             return HomeDomainModel(
                 id: movie.id,
@@ -49,8 +49,8 @@ public struct HomeTransformer: Mapper {
         }
     }
     
-    public func transformResponseToEntity(response: MovieResponse) -> HomeModuleEntity {
-        let movieEntity = HomeModuleEntity()
+    public func transformResponseToEntity(response: MovieResponse) -> MovieEntity {
+        let movieEntity = MovieEntity()
         movieEntity.id = response.id ?? 0
         movieEntity.title = response.title ?? ""
         movieEntity.backdropPath = response.backdropPath ?? ""
@@ -63,7 +63,7 @@ public struct HomeTransformer: Mapper {
         return movieEntity
     }
     
-    public func transformEntityToDomain(entity: HomeModuleEntity) -> HomeDomainModel {
+    public func transformEntityToDomain(entity: MovieEntity) -> HomeDomainModel {
         return HomeDomainModel(
             id: entity.id,
             title: entity.title,
@@ -78,7 +78,7 @@ public struct HomeTransformer: Mapper {
         )
     }
 
-    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [HomeModuleEntity]) -> [HomeDomainModel] {
+    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [MovieEntity]) -> [HomeDomainModel] {
         return entities.map { movie in
             return HomeDomainModel(
                 id: movie.id, title: movie.title,

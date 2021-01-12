@@ -12,13 +12,13 @@ import NCore
 public struct DetailTransformer: Mapper {
    
     public typealias Response = MovieResponse
-    public typealias Entity = DetailModuleEntity
+    public typealias Entity = MovieEntity
     public typealias Domain = DetailDomainModel
 
     public init() {}
 
-    public func transformResponseToEntity(response: MovieResponse) -> DetailModuleEntity {
-        let movieEntity = DetailModuleEntity()
+    public func transformResponseToEntity(response: MovieResponse) -> MovieEntity {
+        let movieEntity = MovieEntity()
         movieEntity.id = response.id ?? 0
         movieEntity.title = response.title ?? ""
         movieEntity.backdropPath = response.backdropPath ?? ""
@@ -31,15 +31,15 @@ public struct DetailTransformer: Mapper {
         return movieEntity
     }
     
-    public func transformResponsesToEntities(responses: [MovieResponse]) -> [DetailModuleEntity] {
+    public func transformResponsesToEntities(responses: [MovieResponse]) -> [MovieEntity] {
         fatalError()
     }
 
-    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [MovieResponse]) -> [DetailModuleEntity] {
+    public func transformResponseToEntities(from endpoint: MovieEndPoints, list: [MovieResponse]) -> [MovieEntity] {
         fatalError()
     }
     
-    public func transformEntityToDomain(entity: DetailModuleEntity) -> DetailDomainModel {
+    public func transformEntityToDomain(entity: MovieEntity) -> DetailDomainModel {
         return DetailDomainModel(
             id: entity.id,
             title: entity.title,
@@ -54,7 +54,7 @@ public struct DetailTransformer: Mapper {
         )
     }
 
-    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [DetailModuleEntity]) -> [DetailDomainModel] {
+    public func tranformMovieEntitiesToDomains(endpoint: MovieEndPoints, entities: [MovieEntity]) -> [DetailDomainModel] {
         return entities.map { movie in
             return DetailDomainModel(
                 id: movie.id, title: movie.title,

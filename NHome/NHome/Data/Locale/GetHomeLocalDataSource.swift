@@ -13,7 +13,7 @@ import RealmSwift
 public struct GetHomeLocalDataSource: LocaleDataSource {
 
     public typealias Request = Any
-    public typealias Response = HomeModuleEntity
+    public typealias Response = MovieEntity
 
     private let realm: Realm
 
@@ -21,9 +21,9 @@ public struct GetHomeLocalDataSource: LocaleDataSource {
         self.realm = realm
     }
 
-    public func get(id: Int) -> AnyPublisher<HomeModuleEntity, Error> {
-        return Future<HomeModuleEntity, Error> { (completion) in
-            let movies  = realm.objects(HomeModuleEntity.self)
+    public func get(id: Int) -> AnyPublisher<MovieEntity, Error> {
+        return Future<MovieEntity, Error> { (completion) in
+            let movies  = realm.objects(MovieEntity.self)
                     .filter("id=\(id)")
             print(movies)
             guard let targetMeal = movies.first else { return completion(.failure(DatabaseError.requestFailed))}
@@ -31,10 +31,10 @@ public struct GetHomeLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func update(id: String, entity: HomeModuleEntity) -> AnyPublisher<Bool, Error> {
+    public func update(id: String, entity: MovieEntity) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { (completion) in
             guard
-                let targetMovie = self.realm.objects(HomeModuleEntity.self).filter("id=\(id)").first
+                let targetMovie = self.realm.objects(MovieEntity.self).filter("id=\(id)").first
             else {
                 return completion(.failure(DatabaseError.invalidInstance))
             }
@@ -56,25 +56,25 @@ public struct GetHomeLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func toggle(id: Int) -> AnyPublisher<HomeModuleEntity, Error> {
+    public func toggle(id: Int) -> AnyPublisher<MovieEntity, Error> {
         fatalError()
     }
 
-    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[HomeModuleEntity], Error> {
-        return Future<[HomeModuleEntity], Error> { (completion) in
-            let movies: Results<HomeModuleEntity> = {
-                realm.objects(HomeModuleEntity.self)
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[MovieEntity], Error> {
+        return Future<[MovieEntity], Error> { (completion) in
+            let movies: Results<MovieEntity> = {
+                realm.objects(MovieEntity.self)
                     .filter("movieCategory='\(endpoint.rawValue)'")
                     .sorted(byKeyPath: "title", ascending: true)
             }()
-            completion(.success(movies.toCustomObjects(fromType: HomeModuleEntity.self)))
+            completion(.success(movies.toCustomObjects(fromType: MovieEntity.self)))
         }.eraseToAnyPublisher()
     }
 
-    public func add(entities: [HomeModuleEntity]) -> AnyPublisher<Bool, Error> {
+    public func add(entities: [MovieEntity]) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { (completion) in
             do {
-                let existingMovies = realm.objects(HomeModuleEntity.self)
+                let existingMovies = realm.objects(MovieEntity.self)
 
                 let filteredMovies = entities.filter { apiMovie in
                     return !existingMovies.contains(where: { localMovie in

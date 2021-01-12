@@ -10,7 +10,6 @@
 		56E27EFA1AD86305599A5591 /* Pods_NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D7EB2403C01FEEE97FF45 /* Pods_NHome.framework */; };
 		A1AECDEB25AC828300FF9709 /* HomeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDEA25AC828300FF9709 /* HomeTransformer.swift */; };
 		A1AECDF225AC82B200FF9709 /* GetHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */; };
-		A1AECDF625AC82CA00FF9709 /* HomeModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */; };
 		A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */; };
 		A1AECDFC25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */; };
 		A1AECDFF25AC82FF00FF9709 /* HomeModuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */; };
@@ -52,7 +51,6 @@
 		82F4FFF4A1D283CE175D80EF /* Pods-NHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHome.release.xcconfig"; path = "Target Support Files/Pods-NHome/Pods-NHome.release.xcconfig"; sourceTree = "<group>"; };
 		A1AECDEA25AC828300FF9709 /* HomeTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransformer.swift; sourceTree = "<group>"; };
 		A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeRepository.swift; sourceTree = "<group>"; };
-		A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleEntity.swift; sourceTree = "<group>"; };
 		A1AECDF825AC82D900FF9709 /* GetHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeLocalDataSource.swift; sourceTree = "<group>"; };
 		A1AECDFB25AC82EF00FF9709 /* GetHomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeRemoteDataSource.swift; sourceTree = "<group>"; };
 		A1AECDFE25AC82FF00FF9709 /* HomeModuleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleResponse.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		A1AECDE725AC7FE400FF9709 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A1AECDED25AC829200FF9709 /* Entity */,
 				A1AECDEE25AC829800FF9709 /* Locale */,
 				A1AECDEF25AC829F00FF9709 /* Remote */,
 				A1AECDF125AC82B200FF9709 /* GetHomeRepository.swift */,
@@ -123,14 +120,6 @@
 				A1AECE3725AC89B400FF9709 /* HomeDomainModel.swift */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		A1AECDED25AC829200FF9709 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				A1AECDF525AC82CA00FF9709 /* HomeModuleEntity.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		A1AECDEE25AC829800FF9709 /* Locale */ = {
@@ -341,7 +330,6 @@
 				A1AECDEB25AC828300FF9709 /* HomeTransformer.swift in Sources */,
 				A1AECDF225AC82B200FF9709 /* GetHomeRepository.swift in Sources */,
 				A1AECDF925AC82D900FF9709 /* GetHomeLocalDataSource.swift in Sources */,
-				A1AECDF625AC82CA00FF9709 /* HomeModuleEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -654,10 +654,10 @@
             filePath = "Nonton/App/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "scene(_:willConnectTo:options:)"
-            landmarkType = "7">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "SceneDelegate"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1288,7 +1288,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FFF4F0EA-C070-4E81-B676-8E9C747189A3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
@@ -1336,7 +1336,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "24334DEE-2A41-4869-9BEE-A2E3F28E7856"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1352,7 +1352,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "700BF3FE-5CBD-4D65-BDD0-924FE2BC18E8"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
@@ -1384,48 +1384,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "get(id:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 6190e70bb6c64928"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NDetail.GetDetailLocalDataSource.get(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;NDetail.DetailModuleEntity, Swift.Error&gt;"
-                  moduleName = "NDetail"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  uuid = "8F16DBE6-40D2-46CE-AAB1-7DD4070C1223 - 1cae663b2aa4d31"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((Swift.Result&lt;NDetail.DetailModuleEntity, Swift.Error&gt;) -&gt; ()) -&gt; () in NDetail.GetDetailLocalDataSource.get(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;NDetail.DetailModuleEntity, Swift.Error&gt;"
-                  moduleName = "NDetail"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "232">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1438,8 +1406,8 @@
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "get(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1454,10 +1422,186 @@
             filePath = "../NDetail/NDetail/Data/Locale/GetDetailLocalDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "get(id:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "update(id:entity:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5849C4D3-7C36-4EFD-80B0-21548DA86478"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "execute(endpoint:request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD8DF225-3FB9-4CB5-B837-45F871032FBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NCore/NCore/Presentation/GetSinglePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBFE40EA-81B8-4261-ABCA-6A3550153514"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NDetail/NDetail/Data/Remote/GetDetailRemoteDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "execute(endpoint:request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBF324A7-8B26-40BA-9D95-0F83042077C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NCore/NCore/Presentation/GetSinglePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "toggleFavoriteMovie()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "870A6293-823E-43F9-B25C-2A41D1DE1BDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "execute(endpoint:request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34D4CAF6-AE66-465A-8F59-07956F505A87"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "execute(endpoint:request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "34D4CAF6-AE66-465A-8F59-07956F505A87 - 8ef85a1eec1146ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NCore.MovieEntity) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt; in NDetail.GetDetailRepository.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt;"
+                  moduleName = "NDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/GetDetailRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1409">
+               </Location>
+               <Location
+                  uuid = "34D4CAF6-AE66-465A-8F59-07956F505A87 - ae5c9152d4b299ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NDetail.MovieResponse) -&gt; NCore.MovieEntity in closure #1 (NCore.MovieEntity) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt; in NDetail.GetDetailRepository.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt;"
+                  moduleName = "NDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/GetDetailRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A1E677D-0AF4-4B07-82EE-F944D16C419B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../NDetail/NDetail/Data/GetDetailRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "execute(endpoint:request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A1E677D-0AF4-4B07-82EE-F944D16C419B - 8ef85a1eec1146cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NCore.MovieEntity) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt; in NDetail.GetDetailRepository.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt;"
+                  moduleName = "NDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/GetDetailRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1977">
+               </Location>
+               <Location
+                  uuid = "9A1E677D-0AF4-4B07-82EE-F944D16C419B - 7e8f8f02a0e28724"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; Combine.AnyPublisher&lt;NCore.MovieEntity, Swift.Error&gt; in closure #1 (NCore.MovieEntity) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt; in NDetail.GetDetailRepository.execute(endpoint: NCore.MovieEndPoints, request: Swift.Optional&lt;Swift.Int&gt;) -&gt; Combine.AnyPublisher&lt;NDetail.DetailDomainModel, Swift.Error&gt;"
+                  moduleName = "NDetail"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Andy/Documents/Arya/iOS/DicodingExpert/SubmissionExpert/NDetail/NDetail/Data/GetDetailRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

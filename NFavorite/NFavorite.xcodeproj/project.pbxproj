@@ -13,7 +13,6 @@
 		A11444CE257DC93F000D5985 /* NFavorite.h in Headers */ = {isa = PBXBuildFile; fileRef = A11444C0257DC93E000D5985 /* NFavorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1144501257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1144500257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift */; };
 		A1E0159C257DD48600CFF9B9 /* GetFavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0159B257DD48600CFF9B9 /* GetFavoritesRepository.swift */; };
-		A1E015A5257DD4FD00CFF9B9 /* FavoriteModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015A4257DD4FD00CFF9B9 /* FavoriteModuleEntity.swift */; };
 		A1E015D5257DD6EA00CFF9B9 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015D4257DD6EA00CFF9B9 /* NCore.framework */; };
 		A1E015F2257DD8EB00CFF9B9 /* FavoriteDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015F1257DD8EB00CFF9B9 /* FavoriteDomainModel.swift */; };
 		A1E015F6257DE2EE00CFF9B9 /* FavoriteTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015F5257DE2EE00CFF9B9 /* FavoriteTransformer.swift */; };
@@ -40,7 +39,6 @@
 		A11444CD257DC93F000D5985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1144500257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoritesLocaleDataSource.swift; sourceTree = "<group>"; };
 		A1E0159B257DD48600CFF9B9 /* GetFavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoritesRepository.swift; sourceTree = "<group>"; };
-		A1E015A4257DD4FD00CFF9B9 /* FavoriteModuleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModuleEntity.swift; sourceTree = "<group>"; };
 		A1E015D4257DD6EA00CFF9B9 /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E015F1257DD8EB00CFF9B9 /* FavoriteDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDomainModel.swift; sourceTree = "<group>"; };
 		A1E015F5257DE2EE00CFF9B9 /* FavoriteTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTransformer.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		A11444F8257DCC34000D5985 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A1E015A8257DD50300CFF9B9 /* Entity */,
 				A11444FE257DCCF3000D5985 /* Locale */,
 				A1E0159B257DD48600CFF9B9 /* GetFavoritesRepository.swift */,
 			);
@@ -133,14 +130,6 @@
 				A1144500257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift */,
 			);
 			path = Locale;
-			sourceTree = "<group>";
-		};
-		A1E015A8257DD50300CFF9B9 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				A1E015A4257DD4FD00CFF9B9 /* FavoriteModuleEntity.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		D345C3CB411ED79D9D306E6A /* Pods */ = {
@@ -297,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E015A5257DD4FD00CFF9B9 /* FavoriteModuleEntity.swift in Sources */,
 				A1E015F2257DD8EB00CFF9B9 /* FavoriteDomainModel.swift in Sources */,
 				A1E0159C257DD48600CFF9B9 /* GetFavoritesRepository.swift in Sources */,
 				A1144501257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift in Sources */,

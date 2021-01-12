@@ -13,7 +13,7 @@ import RealmSwift
 public struct GetDetailLocalDataSource: LocaleDataSource {
 
     public typealias Request = Any
-    public typealias Response = DetailModuleEntity
+    public typealias Response = MovieEntity
 
     private let realm: Realm
 
@@ -21,9 +21,9 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         self.realm = realm
     }
 
-    public func get(id: Int) -> AnyPublisher<DetailModuleEntity, Error> {
-        return Future<DetailModuleEntity, Error> { (completion) in
-            let movies  = realm.objects(DetailModuleEntity.self)
+    public func get(id: Int) -> AnyPublisher<MovieEntity, Error> {
+        return Future<MovieEntity, Error> { (completion) in
+            let movies  = realm.objects(MovieEntity.self)
                     .filter("id=\(id)")
             print(movies)
             guard let targetMeal = movies.first else { return completion(.failure(DatabaseError.requestFailed))}
@@ -31,10 +31,10 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func update(id: String, entity: DetailModuleEntity) -> AnyPublisher<Bool, Error> {
+    public func update(id: String, entity: MovieEntity) -> AnyPublisher<Bool, Error> {
         return Future<Bool, Error> { (completion) in
             guard
-                let targetMovie = self.realm.objects(DetailModuleEntity.self).filter("id=\(id)").first
+                let targetMovie = self.realm.objects(MovieEntity.self).filter("id=\(id)").first
             else {
                 return completion(.failure(DatabaseError.invalidInstance))
             }
@@ -56,9 +56,9 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func toggle(id: Int) -> AnyPublisher<DetailModuleEntity, Error> {
-        return Future<DetailModuleEntity, Error> { (completion) in
-            guard let targetMovie = realm.objects(DetailModuleEntity.self).filter("id=\(id)").first
+    public func toggle(id: Int) -> AnyPublisher<MovieEntity, Error> {
+        return Future<MovieEntity, Error> { (completion) in
+            guard let targetMovie = realm.objects(MovieEntity.self).filter("id=\(id)").first
             else {
                 return completion(.failure(DatabaseError.requestFailed))
             }
@@ -73,11 +73,11 @@ public struct GetDetailLocalDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[DetailModuleEntity], Error> {
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[MovieEntity], Error> {
         fatalError()
     }
 
-    public func add(entities: [DetailModuleEntity]) -> AnyPublisher<Bool, Error> {
+    public func add(entities: [MovieEntity]) -> AnyPublisher<Bool, Error> {
         fatalError()
     }
 }

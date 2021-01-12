@@ -13,7 +13,7 @@ import Combine
 public struct GetFavoritesLocaleDataSource: LocaleDataSource {
    
     public typealias Request = Any
-    public typealias Response = FavoriteModuleEntity
+    public typealias Response = MovieEntity
 
     private let realm: Realm
 
@@ -21,21 +21,21 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
         self.realm = realm
     }
 
-    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[FavoriteModuleEntity], Error> {
-        return Future<[FavoriteModuleEntity], Error> { (completion) in
-            let movies: Results<FavoriteModuleEntity> = {
-                realm.objects(FavoriteModuleEntity.self)
+    public func list(endpoint: MovieEndPoints) -> AnyPublisher<[MovieEntity], Error> {
+        return Future<[MovieEntity], Error> { (completion) in
+            let movies: Results<MovieEntity> = {
+                realm.objects(MovieEntity.self)
                     .filter("isFavorite=\(true)")
                     .sorted(byKeyPath: "title", ascending: true)
             }()
-            completion(.success(movies.toCustomObjects(fromType: FavoriteModuleEntity.self)))
+            completion(.success(movies.toCustomObjects(fromType: MovieEntity.self)))
         }.eraseToAnyPublisher()
     }
 
-    public func toggle(id: Int) -> AnyPublisher<FavoriteModuleEntity, Error> {
-        return Future<FavoriteModuleEntity, Error> { (completion) in
+    public func toggle(id: Int) -> AnyPublisher<MovieEntity, Error> {
+        return Future<MovieEntity, Error> { (completion) in
             guard
-                let targetMovie = self.realm.objects(FavoriteModuleEntity.self).filter("id=\(id)").first
+                let targetMovie = self.realm.objects(MovieEntity.self).filter("id=\(id)").first
             else {
                 return completion(.failure(DatabaseError.invalidInstance))
             }
@@ -50,15 +50,15 @@ public struct GetFavoritesLocaleDataSource: LocaleDataSource {
         }.eraseToAnyPublisher()
     }
 
-    public func add(entities: [FavoriteModuleEntity]) -> AnyPublisher<Bool, Error> {
+    public func add(entities: [MovieEntity]) -> AnyPublisher<Bool, Error> {
         fatalError()
     }
 
-    public func get(id: Int) -> AnyPublisher<FavoriteModuleEntity, Error> {
+    public func get(id: Int) -> AnyPublisher<MovieEntity, Error> {
         fatalError()
     }
 
-    public func update(id: String, entity: FavoriteModuleEntity) -> AnyPublisher<Bool, Error> {
+    public func update(id: String, entity: MovieEntity) -> AnyPublisher<Bool, Error> {
         fatalError()
     }
 }

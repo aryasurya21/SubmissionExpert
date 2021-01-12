@@ -15,11 +15,11 @@ public struct GetDetailRepository<
     Transformer: Mapper>: Repository
 where
     GetDetailRemoteDataSource.Request == Int,
-    GetDetailLocalDataSource.Response == DetailModuleEntity,
+    GetDetailLocalDataSource.Response == MovieEntity,
     GetDetailRemoteDataSource.Response == MovieResponse,
     Transformer.Response == MovieResponse,
     Transformer.Domain == DetailDomainModel,
-    Transformer.Entity == DetailModuleEntity {
+    Transformer.Entity == MovieEntity {
 
     public typealias Request = Int
     public typealias Response = DetailDomainModel
