@@ -1,6 +1,0 @@
-framework module Pods_NFavorite {
-  umbrella header "Pods-NFavorite-umbrella.h"
-
-  export *
-  module * { export * }
-}

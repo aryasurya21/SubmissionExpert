@@ -1,6 +1,0 @@
-framework module Pods_NDetail {
-  umbrella header "Pods-NDetail-umbrella.h"
-
-  export *
-  module * { export * }
-}
