@@ -3,7 +3,7 @@ before_install:
 install:
   - brew update && brew upgrade swiftlint
   - cd Nonton
-  - pod install
+  - pod install --verbose
 language: swift
 osx_image: xcode12
 xcode_workspace: Nonton.xcworkspace
