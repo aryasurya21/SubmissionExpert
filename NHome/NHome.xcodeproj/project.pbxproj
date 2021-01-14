@@ -17,8 +17,6 @@
 		A1D0510825AC7C100093AD5D /* NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D050FE25AC7C100093AD5D /* NHome.framework */; };
 		A1D0510D25AC7C100093AD5D /* NHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0510C25AC7C100093AD5D /* NHomeTests.swift */; };
 		A1D0510F25AC7C100093AD5D /* NHome.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D0510125AC7C100093AD5D /* NHome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1D8BD1C25AC7D0200065969 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1B25AC7D0200065969 /* NCore.framework */; };
-		A1D8BD1D25AC7D0200065969 /* NCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1B25AC7D0200065969 /* NCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +28,6 @@
 			remoteInfo = NHome;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A1D8BD1E25AC7D0200065969 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A1D8BD1D25AC7D0200065969 /* NCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		496DBCFA4C67F71973EF9A10 /* Pods-NHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHome.debug.xcconfig"; path = "Target Support Files/Pods-NHome/Pods-NHome.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D8BD1C25AC7D0200065969 /* NCore.framework in Frameworks */,
 				56E27EFA1AD86305599A5591 /* Pods_NHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +194,6 @@
 				A1D050FA25AC7C100093AD5D /* Sources */,
 				A1D050FB25AC7C100093AD5D /* Frameworks */,
 				A1D050FC25AC7C100093AD5D /* Resources */,
-				A1D8BD1E25AC7D0200065969 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

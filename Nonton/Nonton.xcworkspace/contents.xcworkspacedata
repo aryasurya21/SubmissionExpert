@@ -5,12 +5,6 @@
       location = "group:Nonton.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../NCore/NCore.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../NDetail/NDetail.xcodeproj">
    </FileRef>
    <FileRef
@@ -21,5 +15,8 @@
    </FileRef>
    <FileRef
       location = "group:../NProfile/NProfile.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

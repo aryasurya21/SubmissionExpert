@@ -98,9 +98,9 @@
 		A1AC859425AD57FE00AF2A54 /* NProfile */ = {
 			isa = PBXGroup;
 			children = (
+				A166F2AA25AD586A008E7A3B /* ProfileData.swift */,
 				A1AC859525AD57FE00AF2A54 /* NProfile.h */,
 				A1AC859625AD57FE00AF2A54 /* Info.plist */,
-				A166F2AA25AD586A008E7A3B /* ProfileData.swift */,
 			);
 			path = NProfile;
 			sourceTree = "<group>";

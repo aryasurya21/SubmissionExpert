@@ -11,7 +11,6 @@
 		A18228AC257E0C44003690C5 /* NDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18228A2257E0C44003690C5 /* NDetail.framework */; };
 		A18228B1257E0C44003690C5 /* NDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18228B0257E0C44003690C5 /* NDetailTests.swift */; };
 		A18228B3257E0C44003690C5 /* NDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = A18228A5257E0C44003690C5 /* NDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A18228E9257E0CAD003690C5 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18228E8257E0CAD003690C5 /* NCore.framework */; };
 		A1822920257E0DF7003690C5 /* DetailTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182291F257E0DF7003690C5 /* DetailTransformer.swift */; };
 		A1822938257E0E93003690C5 /* DetailModuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1822937257E0E93003690C5 /* DetailModuleResponse.swift */; };
 		A182293E257E0EAB003690C5 /* GetDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182293D257E0EAB003690C5 /* GetDetailRemoteDataSource.swift */; };
@@ -54,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18228E9257E0CAD003690C5 /* NCore.framework in Frameworks */,
 				51624B2524BEE4E3EC00BE14 /* Pods_NDetail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,30 +1,29 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+source 'https://github.com/aryasurya21/NCorePodSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 workspace 'Nonton'
  
 target 'Nonton' do
   pod 'Alamofire'
   pod 'SwiftLint'
+  pod 'NCore'
   pod 'RealmSwift'
   pod 'SDWebImageSwiftUI'
 end
 
-target 'NCore' do
-  project '../NCore/NCore'
-  pod 'RealmSwift'
-end
-
 target 'NFavorite' do
   project '../NFavorite/NFavorite'
-  #pod 'NCore', :path => '../NCore/NCore'
+  pod 'NCore'
   pod 'RealmSwift'
 end
 
 target 'NDetail' do
   project '../NDetail/NDetail'
-  #pod 'NCore', :path => '../NCore/NCore'
+  pod 'NCore'
   pod 'Alamofire'
   pod 'RealmSwift'
   pod 'SDWebImageSwiftUI'
@@ -32,6 +31,7 @@ end
 
 target 'NHome' do
   project '../NHome/NHome'
+  pod 'NCore'
   pod 'Alamofire'
   pod 'RealmSwift'
   pod 'SDWebImageSwiftUI'

@@ -25,8 +25,6 @@
 		A166F2A925AD5858008E7A3B /* NProfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A166F2A725AD5858008E7A3B /* NProfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A18B5A6625601B74005C4E61 /* MovieBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B5A6525601B74005C4E61 /* MovieBackdrop.swift */; };
 		A1A034C925AD35C400DA60B1 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A034C825AD35C400DA60B1 /* Injector.swift */; };
-		A1A73689257B70B400BCBAED /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A73688257B70B400BCBAED /* NCore.framework */; };
-		A1A7368A257B70B400BCBAED /* NCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1A73688257B70B400BCBAED /* NCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1B261E5255FD10E0085117B /* MoviePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B261E4255FD10E0085117B /* MoviePoster.swift */; };
 		A1B704E3258252F1000F71D0 /* NDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B704E2258252F1000F71D0 /* NDetail.framework */; };
 		A1B704E4258252F1000F71D0 /* NDetail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1B704E2258252F1000F71D0 /* NDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1A7368A257B70B400BCBAED /* NCore.framework in Embed Frameworks */,
 				A166F2A925AD5858008E7A3B /* NProfile.framework in Embed Frameworks */,
 				A1E015A3257DD4AB00CFF9B9 /* NFavorite.framework in Embed Frameworks */,
 				A1D8BD1A25AC7CD400065969 /* NHome.framework in Embed Frameworks */,
@@ -65,8 +62,8 @@
 		A10D6DC3256140E500773467 /* MoviePosterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterList.swift; sourceTree = "<group>"; };
 		A10FD707255EDE840066FA52 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A119A00925AD440B008C0D5A /* NRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteRouter.swift; path = Router/FavoriteRouter.swift; sourceTree = "<group>"; };
-		A119A03B25AD461B008C0D5A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeRouter.swift; path = Router/HomeRouter.swift; sourceTree = "<group>"; };
+		A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		A119A03B25AD461B008C0D5A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A14554A325623A0C00FF16CA /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		A14554A825623A3C00FF16CA /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		A14554BF25624E7800FF16CA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -84,6 +81,7 @@
 		A1627F86255E233900E76BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A166F2A725AD5858008E7A3B /* NProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18B5A6525601B74005C4E61 /* MovieBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdrop.swift; sourceTree = "<group>"; };
+		A18F0E9625AEFFE800BFC861 /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A034C825AD35C400DA60B1 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		A1A73688257B70B400BCBAED /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B261E4255FD10E0085117B /* MoviePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePoster.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			files = (
 				A1D8BD1925AC7CD400065969 /* NHome.framework in Frameworks */,
 				A1E015A2257DD4AB00CFF9B9 /* NFavorite.framework in Frameworks */,
-				A1A73689257B70B400BCBAED /* NCore.framework in Frameworks */,
 				A166F2A825AD5858008E7A3B /* NProfile.framework in Frameworks */,
 				A1B704E3258252F1000F71D0 /* NDetail.framework in Frameworks */,
 				F5C3160272B8742371B510C5 /* Pods_Nonton.framework in Frameworks */,
@@ -116,6 +113,7 @@
 		67BD0888D89A004729646D50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A18F0E9625AEFFE800BFC861 /* NCore.framework */,
 				A166F2A725AD5858008E7A3B /* NProfile.framework */,
 				A119A00925AD440B008C0D5A /* NRouter.framework */,
 				A1D8BD1825AC7CD400065969 /* NHome.framework */,
@@ -148,6 +146,8 @@
 		A119A03925AD45EF008C0D5A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A119A03B25AD461B008C0D5A /* HomeRouter.swift */,
+				A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -228,8 +228,8 @@
 				A1627FA3255E2BC000E76BEC /* App */,
 				A1627FA4255E2BFE00E76BEC /* Core */,
 				A1627FA5255E2C0300E76BEC /* Features */,
-				A1627FA6255E2C0C00E76BEC /* Supporting Files */,
 				A1627F80255E233900E76BEC /* Preview Content */,
+				A1627FA6255E2C0C00E76BEC /* Supporting Files */,
 			);
 			path = Nonton;
 			sourceTree = "<group>";
@@ -255,12 +255,10 @@
 		A1627FA4255E2BFE00E76BEC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A119A03925AD45EF008C0D5A /* Router */,
-				A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */,
-				A119A03B25AD461B008C0D5A /* HomeRouter.swift */,
 				A1A034C725AD35BA00DA60B1 /* DI */,
 				A162802B255E4B5900E76BEC /* Extension */,
 				A1628036255E6FAC00E76BEC /* Helper */,
+				A119A03925AD45EF008C0D5A /* Router */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -268,10 +266,10 @@
 		A1627FA5255E2C0300E76BEC /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				A14554BE25624E6700FF16CA /* Profile */,
 				A1627FCA255E415000E76BEC /* Detail */,
 				A1627FC8255E414400E76BEC /* Favorite */,
 				A1627FC7255E413E00E76BEC /* Home */,
+				A14554BE25624E6700FF16CA /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";

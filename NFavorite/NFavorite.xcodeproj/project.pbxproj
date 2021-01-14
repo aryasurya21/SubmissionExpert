@@ -13,7 +13,6 @@
 		A11444CE257DC93F000D5985 /* NFavorite.h in Headers */ = {isa = PBXBuildFile; fileRef = A11444C0257DC93E000D5985 /* NFavorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1144501257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1144500257DCD16000D5985 /* GetFavoritesLocaleDataSource.swift */; };
 		A1E0159C257DD48600CFF9B9 /* GetFavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0159B257DD48600CFF9B9 /* GetFavoritesRepository.swift */; };
-		A1E015D5257DD6EA00CFF9B9 /* NCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015D4257DD6EA00CFF9B9 /* NCore.framework */; };
 		A1E015F2257DD8EB00CFF9B9 /* FavoriteDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015F1257DD8EB00CFF9B9 /* FavoriteDomainModel.swift */; };
 		A1E015F6257DE2EE00CFF9B9 /* FavoriteTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E015F5257DE2EE00CFF9B9 /* FavoriteTransformer.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E015D5257DD6EA00CFF9B9 /* NCore.framework in Frameworks */,
 				9494AB45A1E39E6AF304C01E /* Pods_NFavorite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
