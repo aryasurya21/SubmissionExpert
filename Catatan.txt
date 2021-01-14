@@ -1,0 +1,28 @@
+Dear Reviewer,
+Saya membuat aplikasi bertema Film dengan nama "Nonton".
+
+Page yang terdapat dalam aplikasi :
+- Home
+- Detail
+- Favorite
+- Profile
+
+Saya mengembangkan UI pada halaman home dimana pada ketentuan submission dikatakan pada halaman utama dapat menampilkan informasi item (minimal judul dan gambar) dalam format list, pada aplikasi Nonton, saya menerapkan List dalam List, dimana masing masing item dalam List merupakan suatu List ( CollectionView ) sehingga memperindah UI dan tidak melanggar ketentuan.
+
+Saya juga menerapkan beberapa saran dari website Dicoding agar mendapat nilai tambah,
+diantaranya :
+- Menerapkan tampilan aplikasi yang menarik dan sesuai standar sesuai Human Interface Guidelines.
+- menerapkan SwiftLint dalam project
+- menerapkan Clean Architecture dengan model yang berbeda pada tiap layernya ( 3 model untuk presentation, domain, dan data)
+
+Library yang digunakan
+- Alamofire ( untuk networking )
+- RealmSwift ( untuk local data persistence )
+- Swiftlint ( untuk code writings yang sesuai dengan standar )
+- SDWebImageSwiftUI ( untuk membantu menampilkan image dari sumber URL image tersebut )
+
+Saya menghapus folder Pods dan Podfile.lock untuk mengurangi size project yang diupload, dimohon kepada reviewer untuk cd ke folder Nonton terlebih dahulu 
+dan melakukan "pod install"
+
+Terima Kasih :D
+Arya.

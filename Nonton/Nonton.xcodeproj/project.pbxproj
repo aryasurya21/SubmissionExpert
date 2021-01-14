@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10D6DBE25613E7300773467 /* MovieBackdropList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D6DBD25613E7300773467 /* MovieBackdropList.swift */; };
+		A10D6DC4256140E500773467 /* MoviePosterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D6DC3256140E500773467 /* MoviePosterList.swift */; };
+		A10FD708255EDE840066FA52 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10FD707255EDE840066FA52 /* HomeView.swift */; };
+		A119A03C25AD461B008C0D5A /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */; };
+		A119A03D25AD461B008C0D5A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119A03B25AD461B008C0D5A /* HomeRouter.swift */; };
+		A14554A425623A0C00FF16CA /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14554A325623A0C00FF16CA /* FavoriteView.swift */; };
+		A14554A925623A3C00FF16CA /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14554A825623A3C00FF16CA /* MovieRow.swift */; };
+		A14554C025624E7800FF16CA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14554BF25624E7800FF16CA /* ProfileView.swift */; };
+		A1627F79255E233900E76BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627F78255E233900E76BEC /* AppDelegate.swift */; };
+		A1627F7B255E233900E76BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627F7A255E233900E76BEC /* SceneDelegate.swift */; };
+		A1627F7D255E233900E76BEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1627F7C255E233900E76BEC /* ContentView.swift */; };
+		A1627F7F255E233900E76BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1627F7E255E233900E76BEC /* Assets.xcassets */; };
+		A1627F82255E233900E76BEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1627F81255E233900E76BEC /* Preview Assets.xcassets */; };
+		A1627F85255E233900E76BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1627F83255E233900E76BEC /* LaunchScreen.storyboard */; };
+		A166F2A825AD5858008E7A3B /* NProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A166F2A725AD5858008E7A3B /* NProfile.framework */; };
+		A166F2A925AD5858008E7A3B /* NProfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A166F2A725AD5858008E7A3B /* NProfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A18B5A6625601B74005C4E61 /* MovieBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B5A6525601B74005C4E61 /* MovieBackdrop.swift */; };
+		A1A034C925AD35C400DA60B1 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A034C825AD35C400DA60B1 /* Injector.swift */; };
+		A1B261E5255FD10E0085117B /* MoviePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B261E4255FD10E0085117B /* MoviePoster.swift */; };
+		A1B704E3258252F1000F71D0 /* NDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B704E2258252F1000F71D0 /* NDetail.framework */; };
+		A1B704E4258252F1000F71D0 /* NDetail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1B704E2258252F1000F71D0 /* NDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C0B0C02560F7B5006C2267 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0B0BF2560F7B5006C2267 /* DetailView.swift */; };
+		A1CC90E7257B8FF800862BC1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC90E6257B8FF800862BC1 /* ActivityIndicator.swift */; };
+		A1D8BD1925AC7CD400065969 /* NHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1825AC7CD400065969 /* NHome.framework */; };
+		A1D8BD1A25AC7CD400065969 /* NHome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1D8BD1825AC7CD400065969 /* NHome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E015A2257DD4AB00CFF9B9 /* NFavorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */; };
+		A1E015A3257DD4AB00CFF9B9 /* NFavorite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1FD9A3F2562C9F60034399D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD9A3E2562C9F60034399D /* ErrorView.swift */; };
+		F5C3160272B8742371B510C5 /* Pods_Nonton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4583DBE98013D5533C4C4C74 /* Pods_Nonton.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1A7368B257B70B400BCBAED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A166F2A925AD5858008E7A3B /* NProfile.framework in Embed Frameworks */,
+				A1E015A3257DD4AB00CFF9B9 /* NFavorite.framework in Embed Frameworks */,
+				A1D8BD1A25AC7CD400065969 /* NHome.framework in Embed Frameworks */,
+				A1B704E4258252F1000F71D0 /* NDetail.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FF48C363AC3CD886484573E /* Pods-Nonton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nonton.debug.xcconfig"; path = "Target Support Files/Pods-Nonton/Pods-Nonton.debug.xcconfig"; sourceTree = "<group>"; };
+		4583DBE98013D5533C4C4C74 /* Pods_Nonton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nonton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10D6DBD25613E7300773467 /* MovieBackdropList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropList.swift; sourceTree = "<group>"; };
+		A10D6DC3256140E500773467 /* MoviePosterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterList.swift; sourceTree = "<group>"; };
+		A10FD707255EDE840066FA52 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A119A00925AD440B008C0D5A /* NRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		A119A03B25AD461B008C0D5A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		A14554A325623A0C00FF16CA /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		A14554A825623A3C00FF16CA /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		A14554BF25624E7800FF16CA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A161A85A25AC640F00BB9F73 /* NHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHomeTests.swift; sourceTree = "<group>"; };
+		A161A85B25AC640F00BB9F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A161A85D25AC640F00BB9F73 /* NHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHome.h; sourceTree = "<group>"; };
+		A161A85E25AC640F00BB9F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1627F75255E233900E76BEC /* Nonton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nonton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1627F78255E233900E76BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1627F7A255E233900E76BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1627F7C255E233900E76BEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1627F7E255E233900E76BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1627F81255E233900E76BEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1627F84255E233900E76BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1627F86255E233900E76BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A166F2A725AD5858008E7A3B /* NProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18B5A6525601B74005C4E61 /* MovieBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdrop.swift; sourceTree = "<group>"; };
+		A18F0E9625AEFFE800BFC861 /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A034C825AD35C400DA60B1 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		A1A73688257B70B400BCBAED /* NCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B261E4255FD10E0085117B /* MoviePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePoster.swift; sourceTree = "<group>"; };
+		A1B704E2258252F1000F71D0 /* NDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C0B0BF2560F7B5006C2267 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A1CC90E6257B8FF800862BC1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A1D8BD1825AC7CD400065969 /* NHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFavorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FD9A3E2562C9F60034399D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E88B9731B4DD75410CE7C47A /* Pods-Nonton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nonton.release.xcconfig"; path = "Target Support Files/Pods-Nonton/Pods-Nonton.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1627F72255E233900E76BEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D8BD1925AC7CD400065969 /* NHome.framework in Frameworks */,
+				A1E015A2257DD4AB00CFF9B9 /* NFavorite.framework in Frameworks */,
+				A166F2A825AD5858008E7A3B /* NProfile.framework in Frameworks */,
+				A1B704E3258252F1000F71D0 /* NDetail.framework in Frameworks */,
+				F5C3160272B8742371B510C5 /* Pods_Nonton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67BD0888D89A004729646D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18F0E9625AEFFE800BFC861 /* NCore.framework */,
+				A166F2A725AD5858008E7A3B /* NProfile.framework */,
+				A119A00925AD440B008C0D5A /* NRouter.framework */,
+				A1D8BD1825AC7CD400065969 /* NHome.framework */,
+				A161A85825AC640F00BB9F73 /* NHome */,
+				A1B704E2258252F1000F71D0 /* NDetail.framework */,
+				A1E015A1257DD4AB00CFF9B9 /* NFavorite.framework */,
+				A1A73688257B70B400BCBAED /* NCore.framework */,
+				4583DBE98013D5533C4C4C74 /* Pods_Nonton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D0794C0528058F974643A3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF48C363AC3CD886484573E /* Pods-Nonton.debug.xcconfig */,
+				E88B9731B4DD75410CE7C47A /* Pods-Nonton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A10C4C4025621C2B00D937FA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC90E6257B8FF800862BC1 /* ActivityIndicator.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A119A03925AD45EF008C0D5A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A119A03B25AD461B008C0D5A /* HomeRouter.swift */,
+				A119A03A25AD461B008C0D5A /* FavoriteRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A14554A625623A1100FF16CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A14554A725623A1700FF16CA /* MovieRow */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A14554A725623A1700FF16CA /* MovieRow */ = {
+			isa = PBXGroup;
+			children = (
+				A14554A825623A3C00FF16CA /* MovieRow.swift */,
+			);
+			path = MovieRow;
+			sourceTree = "<group>";
+		};
+		A14554BE25624E6700FF16CA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A14554BF25624E7800FF16CA /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A161A85825AC640F00BB9F73 /* NHome */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85925AC640F00BB9F73 /* NHomeTests */,
+				A161A85C25AC640F00BB9F73 /* NHome */,
+			);
+			name = NHome;
+			path = ../NHome;
+			sourceTree = "<group>";
+		};
+		A161A85925AC640F00BB9F73 /* NHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85A25AC640F00BB9F73 /* NHomeTests.swift */,
+				A161A85B25AC640F00BB9F73 /* Info.plist */,
+			);
+			path = NHomeTests;
+			sourceTree = "<group>";
+		};
+		A161A85C25AC640F00BB9F73 /* NHome */ = {
+			isa = PBXGroup;
+			children = (
+				A161A85D25AC640F00BB9F73 /* NHome.h */,
+				A161A85E25AC640F00BB9F73 /* Info.plist */,
+			);
+			path = NHome;
+			sourceTree = "<group>";
+		};
+		A1627F6C255E233900E76BEC = {
+			isa = PBXGroup;
+			children = (
+				A1627F77255E233900E76BEC /* Nonton */,
+				A1627F76255E233900E76BEC /* Products */,
+				7D0794C0528058F974643A3D /* Pods */,
+				67BD0888D89A004729646D50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1627F76255E233900E76BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1627F75255E233900E76BEC /* Nonton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1627F77255E233900E76BEC /* Nonton */ = {
+			isa = PBXGroup;
+			children = (
+				A1627FA3255E2BC000E76BEC /* App */,
+				A1627FA4255E2BFE00E76BEC /* Core */,
+				A1627FA5255E2C0300E76BEC /* Features */,
+				A1627F80255E233900E76BEC /* Preview Content */,
+				A1627FA6255E2C0C00E76BEC /* Supporting Files */,
+			);
+			path = Nonton;
+			sourceTree = "<group>";
+		};
+		A1627F80255E233900E76BEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1627F81255E233900E76BEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1627FA3255E2BC000E76BEC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1627F7C255E233900E76BEC /* ContentView.swift */,
+				A1627F78255E233900E76BEC /* AppDelegate.swift */,
+				A1627F7A255E233900E76BEC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1627FA4255E2BFE00E76BEC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1A034C725AD35BA00DA60B1 /* DI */,
+				A162802B255E4B5900E76BEC /* Extension */,
+				A1628036255E6FAC00E76BEC /* Helper */,
+				A119A03925AD45EF008C0D5A /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1627FA5255E2C0300E76BEC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A1627FCA255E415000E76BEC /* Detail */,
+				A1627FC8255E414400E76BEC /* Favorite */,
+				A1627FC7255E413E00E76BEC /* Home */,
+				A14554BE25624E6700FF16CA /* Profile */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A1627FA6255E2C0C00E76BEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1627F7E255E233900E76BEC /* Assets.xcassets */,
+				A1627F83255E233900E76BEC /* LaunchScreen.storyboard */,
+				A1627F86255E233900E76BEC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1627FC7255E413E00E76BEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1B261E2255FD0F20085117B /* Components */,
+				A10FD707255EDE840066FA52 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1627FC8255E414400E76BEC /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				A14554A625623A1100FF16CA /* Components */,
+				A14554A325623A0C00FF16CA /* FavoriteView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		A1627FCA255E415000E76BEC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A1C0B0BF2560F7B5006C2267 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A162802B255E4B5900E76BEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1FD9A3E2562C9F60034399D /* ErrorView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A1628036255E6FAC00E76BEC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A10C4C4025621C2B00D937FA /* UIKit */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A18B5A6425601B65005C4E61 /* Backdrop */ = {
+			isa = PBXGroup;
+			children = (
+				A18B5A6525601B74005C4E61 /* MovieBackdrop.swift */,
+				A10D6DBD25613E7300773467 /* MovieBackdropList.swift */,
+			);
+			path = Backdrop;
+			sourceTree = "<group>";
+		};
+		A1A034C725AD35BA00DA60B1 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A1A034C825AD35C400DA60B1 /* Injector.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		A1B261E2255FD0F20085117B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A18B5A6425601B65005C4E61 /* Backdrop */,
+				A1B261E3255FD0F70085117B /* Poster */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A1B261E3255FD0F70085117B /* Poster */ = {
+			isa = PBXGroup;
+			children = (
+				A10D6DC3256140E500773467 /* MoviePosterList.swift */,
+				A1B261E4255FD10E0085117B /* MoviePoster.swift */,
+			);
+			path = Poster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1627F74255E233900E76BEC /* Nonton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1627F89255E233900E76BEC /* Build configuration list for PBXNativeTarget "Nonton" */;
+			buildPhases = (
+				9E5E7567C2F83F640CBFA351 /* [CP] Check Pods Manifest.lock */,
+				A1627F71255E233900E76BEC /* Sources */,
+				A1627F72255E233900E76BEC /* Frameworks */,
+				A1627F73255E233900E76BEC /* Resources */,
+				1F4B61D5D5D4C2FD3509DB19 /* [CP] Embed Pods Frameworks */,
+				A1627F93255E24BD00E76BEC /* ShellScript */,
+				A1A7368B257B70B400BCBAED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nonton;
+			productName = Nonton;
+			productReference = A1627F75255E233900E76BEC /* Nonton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1627F6D255E233900E76BEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A1627F74255E233900E76BEC = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = A1627F70255E233900E76BEC /* Build configuration list for PBXProject "Nonton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1627F6C255E233900E76BEC;
+			productRefGroup = A1627F76255E233900E76BEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1627F74255E233900E76BEC /* Nonton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1627F73255E233900E76BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1627F85255E233900E76BEC /* LaunchScreen.storyboard in Resources */,
+				A1627F82255E233900E76BEC /* Preview Assets.xcassets in Resources */,
+				A1627F7F255E233900E76BEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F4B61D5D5D4C2FD3509DB19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nonton/Pods-Nonton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nonton/Pods-Nonton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nonton/Pods-Nonton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5E7567C2F83F640CBFA351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nonton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1627F93255E24BD00E76BEC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then \n    swiftlint \nelse \n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\" \nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1627F71255E233900E76BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A119A03C25AD461B008C0D5A /* FavoriteRouter.swift in Sources */,
+				A10D6DC4256140E500773467 /* MoviePosterList.swift in Sources */,
+				A1C0B0C02560F7B5006C2267 /* DetailView.swift in Sources */,
+				A1FD9A3F2562C9F60034399D /* ErrorView.swift in Sources */,
+				A14554C025624E7800FF16CA /* ProfileView.swift in Sources */,
+				A10D6DBE25613E7300773467 /* MovieBackdropList.swift in Sources */,
+				A1627F79255E233900E76BEC /* AppDelegate.swift in Sources */,
+				A1CC90E7257B8FF800862BC1 /* ActivityIndicator.swift in Sources */,
+				A119A03D25AD461B008C0D5A /* HomeRouter.swift in Sources */,
+				A10FD708255EDE840066FA52 /* HomeView.swift in Sources */,
+				A1A034C925AD35C400DA60B1 /* Injector.swift in Sources */,
+				A1B261E5255FD10E0085117B /* MoviePoster.swift in Sources */,
+				A1627F7B255E233900E76BEC /* SceneDelegate.swift in Sources */,
+				A1627F7D255E233900E76BEC /* ContentView.swift in Sources */,
+				A18B5A6625601B74005C4E61 /* MovieBackdrop.swift in Sources */,
+				A14554A925623A3C00FF16CA /* MovieRow.swift in Sources */,
+				A14554A425623A0C00FF16CA /* FavoriteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1627F83255E233900E76BEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1627F84255E233900E76BEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1627F87255E233900E76BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1627F88255E233900E76BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1627F8A255E233900E76BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF48C363AC3CD886484573E /* Pods-Nonton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nonton/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RREGEMU45;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Nonton/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aryasurya.Nonton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1627F8B255E233900E76BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88B9731B4DD75410CE7C47A /* Pods-Nonton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nonton/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RREGEMU45;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Nonton/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aryasurya.Nonton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1627F70255E233900E76BEC /* Build configuration list for PBXProject "Nonton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1627F87255E233900E76BEC /* Debug */,
+				A1627F88255E233900E76BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1627F89255E233900E76BEC /* Build configuration list for PBXNativeTarget "Nonton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1627F8A255E233900E76BEC /* Debug */,
+				A1627F8B255E233900E76BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1627F6D255E233900E76BEC /* Project object */;
+}
